@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=JetBrains+Mono:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Inter:wght@200..700&display=swap"
+        rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
@@ -22,10 +24,8 @@
             </div>
             <ul class="links" id="links">
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <a class="hamburger" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
             <a class="close-button" onclick="closeButton()"><i class="fa-solid fa-xmark"></i></a>
@@ -33,8 +33,9 @@
     </header>
     <main>
         <div class="container">
+            <div class="hero-section">
             <div class="left-section">
-                <img src="assets/images/ai-generated-8520972_1280.png">
+                <img src="/assets/images/ai-generated-8700791_1280.jpg">
             </div>
             <div class="right-section">
                 <p>
@@ -47,16 +48,49 @@
                     <button>Get Resume</button>
                 </div>
             </div>
+            </div>
         </div>
+        <section>
+            <div class="about-container" id="about">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I’m Joydeep, a final-year BCA student passionate about building a solid foundation in
+                    computer science. I’m currently diving deep into core concepts while sharpening my skills in web
+                    development, Java, Data Structures and Algorithms (DSA), and problem-solving. I love tackling
+                    challenges and creating efficient, user-friendly solutions. Through my projects and learning
+                    journey, I aim to blend creativity with technical expertise to make an impact in the tech world.
+                    When I’m not coding, you’ll find me exploring new tools and ideas to stay ahead in this
+                    ever-evolving field
+                </p>
+            </div>
+            </div>
+        </section>
+            <section>
+            <div class="contact-container" id="contact">
+                <div class="contact-section" id="contact-form">
+                    <form action="">
+                        <input type="text" name="name" required placeholder="name">
+                        <input type="email" name="email" required placeholder="email">
+                        <textarea name="text" id="">Write Something...</textarea>
+                        <input type="submit">
+                    </form>
+                </div>
+                <div class="contact-links-section">
+                    <h3>Contact Me</h3>
+                    <p>Let's have a little chit chat!</p>
+                    <div class="contact-links">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-class">
-        <div class="footer-links">
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-discord"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+                Developed and Designed with<i class="fa-solid fa-heart" style="color: red; margin: 10px;"></i> by Joydeep Debnath
         </div>
     </footer>
     <script src="index.js"></script>

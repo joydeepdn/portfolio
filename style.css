@@ -3,17 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #ffffff;
+html{
+    scroll-behavior: smooth;
 }
+
+body {
+    background-color: #F5FAF7;
+}
+
 nav {
     display: flex;
     width: 100%;
-    height:auto;
-    background-color: #298c85;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 100px 10px;
+    background-color: #80A1C1;
 }
 
 .mynav .links {
@@ -24,23 +29,24 @@ nav {
 
 .hamburger {
     display: none;
-    color: #ffffff;
+    color: #F5FAF7;
     font-size: 25px;
 }
-.close-button{
+
+.close-button {
     display: none;
-    color: #ffffff;
+    color: #F5FAF7;
     font-size: 25px;
 }
 
 .links a {
     text-decoration: none;
-    color: #ffffff;
+    color: #F5FAF7;
     font-weight: bold;
     font-size: 20px;
     list-style-type: none;
     text-decoration: none;
-    font-family: 'JetBrains Mono';
+    font-family: 'Inter';
     padding: 4px
 }
 
@@ -50,8 +56,8 @@ nav {
 }
 
 .links a:hover {
-    background-color: #ffffff;
-    color: #298c85;
+    color: #80A1C1;
+    background-color: #F5FAF7;
     border-radius: 3px;
     transition: 0.3s;
     cursor: pointer;
@@ -67,45 +73,50 @@ nav {
 }
 
 .right-section p {
-    color: #298c85;
+
     text-align: center;
-    font-size: 50px;
-    line-height: normal;
-    font-family: 'JetBrains Mono';
+    font-size: 55px;
+    font-family: 'Inter';
     height: auto;
+    color: #070d09;
+    font-weight: 700;
 }
-span{
+
+span {
     font-size: 20px;
+    font-weight: normal;
 }
 
 .left-section {
-    width: 100%;
     max-width: 600px;
 }
 
 .left-section img {
     height: auto;
-    max-width:100%;
-    object-fit: cover;
-    box-shadow: 0px 10px 30px #42403c;
+    max-width: 100%;
+    object-fit: contain;
     object-position: right;
+    border-radius: 50%;
 }
+
 .container {
+    padding: 10px 100px 0;
+}
+
+.container .hero-section {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 100px 0 200px;
 }
 
 .logo {
-    color: #ffffff;
-    font-family: 'JetBrains Mono';
+    color: #F5FAF7;
+    font-family: 'Inter';
     text-decoration: none;
+
 }
 
 .Connect {
@@ -113,98 +124,131 @@ span{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin: 20px 0 0;
 }
 
 .Connect button {
-    font-family: 'Oswald';
+    font-family: 'Inter';
     padding: 10px;
-    color: #ffffff;
+    color: #F5FAF7;
+    width: 150px;
+    height: 60px;
     font-size: 20px;
-    background-color: #298c85;
+    background-color: #80A1C1;
     border: none;
-    box-shadow: 0 6px #999;
     border-radius: 4px;
+    transition: all 0.5;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.Connect button:active{
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+.Connect button:hover{
+    background-color: #66809A;
 }
-.footer-class{
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-    background-color: #298c85;
-    padding: 10px;
-}
-.footer-links{
-    display: flex;
-    font-size: 25px;
-    gap: 20px;
-}
-.footer-links a{
-    color: #ffffff;
-    border-radius: 4px;
-    padding: 5px;
-}
-.footer-links a:hover{
-    background-color: #ffffff;
-    color: #298c85;
-    transition: 0.3s;
-}
-@media screen and (max-width:600px) {
-        #links{
-        display: none;
-        width: 100%;
-        position: absolute;
-        background-color: #298c85;
-        left: 0;
-        top: 50px;
-        text-align: center;
-        z-index: 1;
-    }
-    .links li{
-        margin: 10px;
-    }
-    .links a{
-        font-size: 20px;
-        color: #ffffff;
-    }
 
-    .hamburger{
-        display: block;
-    }
-.container {
-    margin: 0;
-    flex-direction: column;
-    padding: 10px;
-    width: 100%;
-    height: auto;
-    gap: 20px;
+.about-container {
+    padding: 10px 100px 0;
 }
-.left-section{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+
+.about-container .about-me {
+    margin: 0 0 200px;
 }
-.left-section img{ 
-max-width: 300px;    
+
+.about-me h2 {
+    margin-bottom: 10px;
+    font-family: "Inter";
+    color: #F2D0A4;
+    font-size: 1.8vw;
 }
-.right-section p{
+
+.about-me p {
+    text-align: justify;
     font-size: 20px;
-    /* padding:10px; */
-    line-height: normal;
-    text-align: center;
+    font-family: "Inter";
+    color: #070d09;
+    line-height: 1.6;
 }
-.right-section button{
-    font-size: 10px;
-    background-color: #298c85;
-    color: #ffffff;
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 100px 0 100px;
+    padding: 0 100px 0;
+    gap: 50px;
+
 }
-.Connect{
+
+.contact-container.contact-section {
+    max-width: 600px;
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+
 }
+
+.contact-section input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #80A1C1;
+    border-radius: 4px;
+}
+
+.contact-section input[type=submit] {
+    margin-top: 10px;
+    background-color: #80A1C1;
+    color: #f5faf7;
+    border: none;
+}
+
+.contact-section textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    border: 2px solid #80A1C1;
+    resize: vertical;
+    padding: 10px;
+}
+
+.contact-links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 300px;
+    margin-right: 50px;
+    align-items: flex-start;
+}
+
+.contact-links a {
+    font-size: 30px;
+    margin: 10px;
+    color: #80A1C1;
+}
+
+.contact-links-section p {
+    font-size: 20px;
+    font-family: "Inter";
+    line-height: 2;
+}
+
+.contact-links-section h3 {
+    font-size: 1.8vw;
+    font-family: "Inter";
+    text-align: justify;
+    color: #F2D0A4;
+}
+
+.footer-class {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #80A1C1;
+    padding: 10px 100px 10px;
+    color: #F5FAF7;
+    justify-content: center;
+    font-family: "Inter";
+    font-size: 16px;
+    height: 80px;
 }

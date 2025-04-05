@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,77 +24,113 @@
                 <h2>Joydeep</h2>
             </div>
             <ul class="links" id="links">
-                <li><a href="">Home</a></li>
+                <li><a href="#container">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li> <a class="close-button" onclick="closeNav()"><i class="fa-solid fa-xmark"
+                            style="font-size: 30px;"></i></a></li>
             </ul>
-            <a class="hamburger" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
-            <a class="close-button" onclick="closeButton()"><i class="fa-solid fa-xmark"></i></a>
+            <a class="hamburger" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
         </nav>
     </header>
     <main>
-        <div class="container">
+        <div class="container" id="container">
             <div class="hero-section">
-            <div class="left-section">
-                <img src="/assets/images/ai-generated-8700791_1280.jpg">
-            </div>
-            <div class="right-section">
-                <p>
-                    Hello! I'm Joydeep Debnath <br>
-                    <span>a Full-Stack Developer</span>
-                </p>
-                <!-- <a href="https://www.linkedin.com/in/joydeep-debnath-968a33229/" target="_blank"> -->
-                <div class="Connect">
-                    <button>Lets Connect</button>
-                    <button>Get Resume</button>
+                <div class="left-section">
+                    <img src="/assets/images/3411109.jpg">
                 </div>
-            </div>
+                <div class="right-section">
+                    <p>
+                        Hello! I'm Joydeep Debnath <br>
+                        <span>a Full-Stack Developer</span>
+                    </p>
+                    <!-- <a href="https://www.linkedin.com/in/joydeep-debnath-968a33229/" target="_blank"> -->
+                    <div class="Connect">
+                        <button>Lets Connect</button>
+                        <button>Get Resume</button>
+                    </div>
+                </div>
             </div>
         </div>
         <section>
             <div class="about-container" id="about">
-            <div class="about-me">
-                <h2>About Me</h2>
-                <p>
-                    Hi, I’m Joydeep, a final-year BCA student passionate about building a solid foundation in
-                    computer science. I’m currently diving deep into core concepts while sharpening my skills in web
-                    development, Java, Data Structures and Algorithms (DSA), and problem-solving. I love tackling
-                    challenges and creating efficient, user-friendly solutions. Through my projects and learning
-                    journey, I aim to blend creativity with technical expertise to make an impact in the tech world.
-                    When I’m not coding, you’ll find me exploring new tools and ideas to stay ahead in this
-                    ever-evolving field
-                </p>
-            </div>
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi, I’m Joydeep, a final-year BCA student passionate about building a solid foundation in
+                        computer science. I’m currently diving deep into core concepts while sharpening my skills in web
+                        development, Java, Data Structures and Algorithms (DSA), and problem-solving. I love tackling
+                        challenges and creating efficient, user-friendly solutions. Through my projects and learning
+                        journey, I aim to blend creativity with technical expertise to make an impact in the tech world.
+                        When I’m not coding, you’ll find me exploring new tools and ideas to stay ahead in this
+                        ever-evolving field
+                    </p>
+                </div>
+                <div class="technologies">
+                    <h3>Technologies and tools I work with</h3>
+                    <div class="technologies-list">
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/css3.png" alt="css3"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/c-plus-plus-logo.png" alt="c-plus-plus-logo"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/mysql-logo.png" alt="mysql-logo"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/dart.png" alt="dart"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/c-programming.png" alt="c-programming"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/git.png" alt="git"/></li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/flutter.png" alt="flutter"/></li>
+                        <li><img width="120" height="120" src="https://img.icons8.com/ios-glyphs/120/github.png" alt="github"/></li>
+                        <li><img src="/assets/images/php_5968332.png" alt="php"></li>
+                    <div>
+                </div>
             </div>
         </section>
-            <section>
+        <section>
+            <h3 class="contact-header">Contact Me</h3>
             <div class="contact-container" id="contact">
-                <div class="contact-section" id="contact-form">
-                    <form action="">
-                        <input type="text" name="name" required placeholder="name">
-                        <input type="email" name="email" required placeholder="email">
-                        <textarea name="text" id="">Write Something...</textarea>
-                        <input type="submit">
+                <div class="contact-section">
+                    <form id="contact-form">
+                        <input type="text" name="from_name" id="from_name" required placeholder="name">
+                        <input type="email" name="email" id="email" required placeholder="email">
+                        <input type="text" name="subject" id="subject" required placeholder="subject">
+                        <textarea name="message" id="message" placeholder="Write something..."></textarea>
+                        <input type="submit" id="button" value="Send">
                     </form>
+                    <div class="social">
+                        <ul class="contact-links">
+                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/linkedin.png" alt="linkedin"/></li>
+                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/instagram-new.png" alt="instagram-new"/></li>
+                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/discord-logo.png" alt="discord-logo"/></li>
+                            <li><img width="128" height="128" src="https://img.icons8.com/windows/128/github.png" alt="github"/></li>
+                            <li><img width="144" height="144" src="https://img.icons8.com/color/144/stackoverflow.png" alt="stackoverflow"/></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="contact-links-section">
-                    <h3>Contact Me</h3>
-                    <p>Let's have a little chit chat!</p>
-                    <div class="contact-links">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-discord"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+                    <p class="email">I’d love to hear from you! Whether you have a project in mind, a question to ask, or just want to
+                        connect, feel free to reach out. You can email me directly at <a
+                            href="mailto:deepj0147@gmail.com?subject=Your%20Subject&body=Your%20Body">deepj0147@gmail.com</a>
+                    </p>
+                    <ul class="contact-links">
+                        <li><a href=""><img width="144" height="144" src="https://img.icons8.com/fluency/144/linkedin.png" alt="linkedin"/></a></li>
+                        <li><a href=""><img width="144" height="144" src="https://img.icons8.com/fluency/144/instagram-new.png" alt="instagram-new"/></a></li>
+                        <li><a href=""><img width="144" height="144" src="https://img.icons8.com/fluency/144/discord-logo.png" alt="discord-logo"/></a></li>
+                        <li><a href=""><img width="144" height="144" src="https://img.icons8.com/color/144/stackoverflow.png" alt="stackoverflow"/></a></li>
+                        <li><img width="128" height="128" src="https://img.icons8.com/windows/128/github.png" alt="github"/></li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-class">
-                Developed and Designed with<i class="fa-solid fa-heart" style="color: red; margin: 10px;"></i> by Joydeep Debnath
+            Developed and Designed with<i class="fa-solid fa-heart" style="color: red; margin: 10px;"></i> by Joydeep
+            Debnath
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

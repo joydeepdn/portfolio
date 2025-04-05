@@ -8,17 +8,20 @@ html{
 }
 
 body {
-    background-color: #F5FAF7;
+    background-color: #FFFFFF;
 }
 
-nav {
+.mynav {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 100px 10px;
-    background-color: #80A1C1;
+    padding: 10px;
+    background-color: #4d72be;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .mynav .links {
@@ -26,22 +29,27 @@ nav {
     gap: 20px;
     margin-right: 20px;
 }
+.logo {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    text-decoration: none;
+    margin-left: 20px;
+}
 
 .hamburger {
     display: none;
-    color: #F5FAF7;
+    color: #FFFFFF;
     font-size: 25px;
 }
 
 .close-button {
     display: none;
-    color: #F5FAF7;
-    font-size: 25px;
+    color: #2d8ad7;
 }
 
 .links a {
     text-decoration: none;
-    color: #F5FAF7;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 20px;
     list-style-type: none;
@@ -56,13 +64,24 @@ nav {
 }
 
 .links a:hover {
-    color: #80A1C1;
-    background-color: #F5FAF7;
-    border-radius: 3px;
+    background-color: #FFFFFF;
+    color: #4d72be;
     transition: 0.3s;
     cursor: pointer;
+    border-radius: 3px;
 }
 
+.container{
+    height: 100vh;
+    display: flex;
+}
+.container .hero-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
 .right-section {
     display: flex;
     flex-direction: column;
@@ -81,14 +100,12 @@ nav {
     color: #070d09;
     font-weight: 700;
 }
-
+.left-section {
+    max-width: 600px;
+}
 span {
     font-size: 20px;
     font-weight: normal;
-}
-
-.left-section {
-    max-width: 600px;
 }
 
 .left-section img {
@@ -96,159 +113,189 @@ span {
     max-width: 100%;
     object-fit: contain;
     object-position: right;
-    border-radius: 50%;
+    mix-blend-mode: multiply;
 }
-
-.container {
-    padding: 10px 100px 0;
-}
-
-.container .hero-section {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin: 100px 0 200px;
-}
-
-.logo {
-    color: #F5FAF7;
-    font-family: 'Inter';
-    text-decoration: none;
-
-}
-
 .Connect {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     margin: 20px 0 0;
 }
 
 .Connect button {
     font-family: 'Inter';
     padding: 10px;
-    color: #F5FAF7;
+    color: #4d72be;
     width: 150px;
     height: 60px;
     font-size: 20px;
-    background-color: #80A1C1;
-    border: none;
     border-radius: 4px;
-    transition: all 0.5;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
+    border: 2px solid #4d72be;
+    background-color: #FFFFFF;
 }
+
 .Connect button:hover{
-    background-color: #66809A;
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 #4d72be;
 }
 
 .about-container {
-    padding: 10px 100px 0;
+    padding: 100px;
+    background-color: #f2f2f2;
 }
-
-.about-container .about-me {
-    margin: 0 0 200px;
+.about-me{
+    padding: 50px;
 }
-
 .about-me h2 {
-    margin-bottom: 10px;
+    margin: 0 0 50px 0;
     font-family: "Inter";
-    color: #F2D0A4;
-    font-size: 1.8vw;
+    color: #4d85be;
+    font-size: 40px;
+    text-align: center;
 }
 
 .about-me p {
     text-align: justify;
-    font-size: 20px;
     font-family: "Inter";
     color: #070d09;
     line-height: 1.6;
+    font-size: 19px;
 }
-
+.technologies h3{
+    margin: 50px 0 50px 0;
+    font-size: 30px;
+    font-family: "Inter";
+    color: #4d85be;
+    text-align: center;
+    font-weight: 700;
+}
+.technologies{
+    padding: 50px;
+}
+.technologies .technologies-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.technologies-list li{
+    border-radius: 5px;
+    background-color: #E5E5E5;
+}
+.technologies-list img{
+    width: 96px;
+    height: 96px;
+    padding: 10px;
+}
 .contact-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    flex-direction: row-reverse;
-    margin: 100px 0 100px;
-    padding: 0 100px 0;
-    gap: 50px;
-
+    flex-direction: row;
+    padding: 100px;
+    gap: 5em;
 }
-
-.contact-container.contact-section {
+.contact-header{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Inter";
+    color: #4d85be;
+    margin: 70px 0 0 0;
+}
+.contact-section{
     max-width: 600px;
-    display: flex;
-    flex-direction: column;
-
 }
-
 .contact-section input {
     width: 100%;
     height: 50px;
     margin-bottom: 20px;
     padding: 10px;
-    border: 2px solid #80A1C1;
+    border: 2px solid #314a52;
     border-radius: 4px;
+    border-color: #4d72be;
+}
+.contact-section input:focus{
+    outline: none;
 }
 
 .contact-section input[type=submit] {
     margin-top: 10px;
-    background-color: #80A1C1;
-    color: #f5faf7;
-    border: none;
+    color: #070d09;
+    border: 2px solid #4d72be;
+    transition: 0.3s;
+    background-color: #FFFFFF;
 }
-
+.contact-section input[type=submit]:hover{
+    background-color: #4d72be;
+    color: #FFFFFF;
+}
 .contact-section textarea {
     width: 100%;
     height: 200px;
     border-radius: 4px;
-    border: 2px solid #80A1C1;
+    border: 2px solid #4d72be;
     resize: vertical;
     padding: 10px;
 }
+.contact-section textarea:focus{
+    outline: none;
+}
 
 .contact-links-section {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    text-align: justify;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+.contact-links-section .contact-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
     gap: 10px;
-    text-align: center;
-    margin-bottom: 300px;
-    margin-right: 50px;
-    align-items: flex-start;
+}
+.contact-links-section .contact-links img{
+    width: 46px;
+    height: 46px;
 }
 
 .contact-links a {
     font-size: 30px;
     margin: 10px;
-    color: #80A1C1;
+    color: #4d72be;
 }
-
 .contact-links-section p {
-    font-size: 20px;
     font-family: "Inter";
     line-height: 2;
+    font-size: 18px;
 }
 
 .contact-links-section h3 {
-    font-size: 1.8vw;
+    font-size: 40px;
     font-family: "Inter";
     text-align: justify;
-    color: #F2D0A4;
+    color: #be4d72;
+}
+.social{
+    display: none;
 }
 
 .footer-class {
     display: flex;
     width: 100%;
     align-items: center;
-    background-color: #80A1C1;
+    background-color: #4d72be;
     padding: 10px 100px 10px;
-    color: #F5FAF7;
+    color: #FFFFFF;
     justify-content: center;
     font-family: "Inter";
     font-size: 16px;
-    height: 80px;
+    height:auto;
 }

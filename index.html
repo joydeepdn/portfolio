@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Inter:wght@200..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Portfolio</title>
 </head>
 
@@ -27,34 +28,34 @@
                 <li><a href="#container">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li> <a class="close-button" onclick="closeNav()"><i class="fa-solid fa-xmark"
-                            style="font-size: 30px;"></i></a></li>
+                <a class="close-button" onclick="closeNav()"><i class="fa-solid fa-xmark"
+                        style="font-size: 30px;"></i></a>
             </ul>
-            <a class="hamburger" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <a id="hamburger" class="hamburger" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
         </nav>
     </header>
-    <main>
+    <main id="main-comp">
         <div class="container" id="container">
             <div class="hero-section">
-                <div class="left-section">
-                    <img src="/assets/images/3411109.jpg">
+                <div class="left-section" id="left-section">
+                    <img src="/assets/images/3411109-removebg-preview.png">
                 </div>
-                <div class="right-section">
+                <div class="right-section" id="right-section">
                     <p>
                         Hello! I'm Joydeep Debnath <br>
                         <span>a Full-Stack Developer</span>
                     </p>
                     <!-- <a href="https://www.linkedin.com/in/joydeep-debnath-968a33229/" target="_blank"> -->
                     <div class="Connect">
-                        <button>Lets Connect</button>
-                        <button>Get Resume</button>
+                        <button>Connect</button>
+                        <button>Resume</button>
                     </div>
                 </div>
             </div>
         </div>
         <section>
             <div class="about-container" id="about">
-                <div class="about-me">
+                <div class="about-me" id="about-me">
                     <h2>About Me</h2>
                     <p>
                         Hi, I’m Joydeep, a final-year BCA student passionate about building a solid foundation in
@@ -69,23 +70,33 @@
                 <div class="technologies">
                     <h3>Technologies and tools I work with</h3>
                     <div class="technologies-list">
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/css3.png" alt="css3"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/c-plus-plus-logo.png" alt="c-plus-plus-logo"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/mysql-logo.png" alt="mysql-logo"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/dart.png" alt="dart"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/c-programming.png" alt="c-programming"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/git.png" alt="git"/></li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/flutter.png" alt="flutter"/></li>
-                        <li><img width="120" height="120" src="https://img.icons8.com/ios-glyphs/120/github.png" alt="github"/></li>
-                        <li><img src="/assets/images/php_5968332.png" alt="php"></li>
-                    <div>
-                </div>
-            </div>
+                        <li><img width="144" height="144"
+                                src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png"
+                                alt="java-coffee-cup-logo--v1" />Java</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/html-5--v2.png"
+                                alt="html-5--v2" />HTML</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/css3.png"
+                                alt="css3" />CSS</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/javascript--v1.png"
+                                alt="javascript--v1" />Javascript</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/c-plus-plus-logo.png"
+                                alt="c-plus-plus-logo" />C++</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/mysql-logo.png"
+                                alt="mysql-logo" />MySQL</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/c-programming.png"
+                                alt="c-programming" />C</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/git.png" alt="git" />Git
+                        </li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/github.png"
+                                alt="github" />Github</li>
+                        <li><img width="144" height="144"
+                                src="https://img.icons8.com/color/144/visual-studio-code-2019.png"
+                                alt="visual-studio-code-2019" />Visual Studio Code</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/intellij-idea.png"
+                                alt="intellij-idea" />IntelliJ</li>
+                    </div>
         </section>
-        <section>
+        <section class="contact">
             <h3 class="contact-header">Contact Me</h3>
             <div class="contact-container" id="contact">
                 <div class="contact-section">
@@ -98,25 +109,39 @@
                     </form>
                     <div class="social">
                         <ul class="contact-links">
-                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/linkedin.png" alt="linkedin"/></li>
-                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/instagram-new.png" alt="instagram-new"/></li>
-                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/discord-logo.png" alt="discord-logo"/></li>
-                            <li><img width="128" height="128" src="https://img.icons8.com/windows/128/github.png" alt="github"/></li>
-                            <li><img width="144" height="144" src="https://img.icons8.com/color/144/stackoverflow.png" alt="stackoverflow"/></li>
+                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/linkedin.png"
+                                    alt="linkedin" /></li>
+                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/instagram-new.png"
+                                    alt="instagram-new" /></li>
+                            <li><img width="144" height="144" src="https://img.icons8.com/fluency/144/discord-logo.png"
+                                    alt="discord-logo" /></li>
+                            <li><img width="128" height="128" src="https://img.icons8.com/windows/128/github.png"
+                                    alt="github" /></li>
+                            <li><img width="144" height="144" src="https://img.icons8.com/color/144/stackoverflow.png"
+                                    alt="stackoverflow" /></li>
                         </ul>
                     </div>
                 </div>
                 <div class="contact-links-section">
-                    <p class="email">I’d love to hear from you! Whether you have a project in mind, a question to ask, or just want to
+                    <p class="email">I’d love to hear from you! Whether you have a project in mind, a question to ask,
+                        or just want to
                         connect, feel free to reach out. You can email me directly at <a
                             href="mailto:deepj0147@gmail.com?subject=Your%20Subject&body=Your%20Body">deepj0147@gmail.com</a>
                     </p>
                     <ul class="contact-links">
-                        <li><a href=""><img width="144" height="144" src="https://img.icons8.com/fluency/144/linkedin.png" alt="linkedin"/></a></li>
-                        <li><a href=""><img width="144" height="144" src="https://img.icons8.com/fluency/144/instagram-new.png" alt="instagram-new"/></a></li>
-                        <li><a href=""><img width="144" height="144" src="https://img.icons8.com/fluency/144/discord-logo.png" alt="discord-logo"/></a></li>
-                        <li><a href=""><img width="144" height="144" src="https://img.icons8.com/color/144/stackoverflow.png" alt="stackoverflow"/></a></li>
-                        <li><img width="128" height="128" src="https://img.icons8.com/windows/128/github.png" alt="github"/></li>
+                        <li><a href=""><img width="144" height="144"
+                                    src="https://img.icons8.com/fluency/144/linkedin.png" alt="linkedin" /></a></li>
+                        <li><a href=""><img width="144" height="144"
+                                    src="https://img.icons8.com/fluency/144/instagram-new.png"
+                                    alt="instagram-new" /></a></li>
+                        <li><a href=""><img width="144" height="144"
+                                    src="https://img.icons8.com/fluency/144/discord-logo.png" alt="discord-logo" /></a>
+                        </li>
+                        <li><a href=""><img width="144" height="144"
+                                    src="https://img.icons8.com/color/144/stackoverflow.png" alt="stackoverflow" /></a>
+                        </li>
+                        <li><img width="128" height="128" src="https://img.icons8.com/windows/128/github.png"
+                                alt="github" /></li>
                     </ul>
                 </div>
             </div>
@@ -130,7 +155,9 @@
     </footer>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    <script src="mail.js"></script>
     <script src="script.js"></script>
+    <script type="module" src="animation.js"></script>
 </body>
 
 </html>

@@ -28,8 +28,7 @@
                 <li><a href="#container">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <a class="close-button" onclick="closeNav()"><i class="fa-solid fa-xmark"
-                        style="font-size: 30px;"></i></a>
+                <li class="close-button" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></li>
             </ul>
             <a id="hamburger" class="hamburger" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
         </nav>
@@ -53,11 +52,11 @@
                 </div>
             </div>
         </div>
-        <section>
+        <section class="about-section">
             <div class="about-container" id="about">
                 <div class="about-me" id="about-me">
                     <h2>About Me</h2>
-                    <p>
+                    <p id="about-me-para">
                         Hi, I’m Joydeep, a final-year BCA student passionate about building a solid foundation in
                         computer science. I’m currently diving deep into core concepts while sharpening my skills in web
                         development, Java, Data Structures and Algorithms (DSA), and problem-solving. I love tackling
@@ -69,7 +68,7 @@
                 </div>
                 <div class="technologies">
                     <h3>Technologies and tools I work with</h3>
-                    <div class="technologies-list">
+                    <div class="technologies-list" id="technologies-list">
                         <li><img width="144" height="144"
                                 src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png"
                                 alt="java-coffee-cup-logo--v1" />Java</li>
@@ -149,7 +148,7 @@
     </main>
     <footer>
         <div class="footer-class">
-            Developed and Designed with<i class="fa-solid fa-heart" style="color: red; margin: 10px;"></i> by Joydeep
+            Developed and Designed with <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FA5252/like--v1.png" alt="like--v1"/> by Joydeep
             Debnath
         </div>
     </footer>

@@ -4,7 +4,7 @@ const openBtn = document.getElementById('hamburger');
 function openNav() {
 
   if (screen.width <= 600) {
-    links.style.width = "250px";
+    links.style.width = "300px";
   }
   else if (screen.width > 600) {
     links.style.width = '500px';

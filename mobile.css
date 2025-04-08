@@ -159,12 +159,12 @@
           height: 46px;
       }
       .contact{
-        padding: 70px 17px 70px 17px;
+        padding: 50px 17px 0 17px;
       }
       .contact-container {
           flex-direction: column-reverse;
           margin: 0;
-          gap: 3em;
+          gap: 2em;
       }
 
       .contact-header {

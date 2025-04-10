@@ -25,8 +25,11 @@ const observer = new IntersectionObserver((entries) => {
             else if (entry.target.id == 'technologies-list') {
                 entry.target.classList.add('animate__fadeIn','animate__delay-1.7s')
             }
-            else if(entry.target.id == 'contact-form' || entry.target.id == 'contact-links'){
+            else if(entry.target.id == 'contact-form' || entry.target.id == 'contact-links-section'){
                 entry.target.classList.add('animate__fadeIn');
+            }
+            else if(entry.target.id == 'contact-para' || entry.classList.id == 'contact-links-1'){
+                entry.target.classList.add('animate__bounceIn');
             }
         }
         else {
@@ -36,7 +39,7 @@ const observer = new IntersectionObserver((entries) => {
 }, {
     threshold: 0.7
 })
-const elements = document.querySelectorAll('#about-me-para, #technologies-list, #right-section, #contact-form, #contact-links');
+const elements = document.querySelectorAll('#about-me-para, #technologies-list, #right-section, #contact-form, #contact-links-section, #contact-para, #contact-links-1');
 elements.forEach(elements => observer.observe(elements));
 
 

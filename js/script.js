@@ -7,10 +7,9 @@ function openNav() {
   if (screen.width <= 600) {
     links.style.width = "300px";
   }
-  else if (screen.width > 600) {
-    links.style.width = '500px';
+  else if(screen.width > 600){
+    links.style.width = '500px'
   }
-  
   if(openNav){
     main.style.opacity = 0.5;
   }

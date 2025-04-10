@@ -20,7 +20,7 @@ const observer = new IntersectionObserver((entries) => {
                 observer.unobserve(entry.target)
             }
             else if (entry.target.id == 'about-me-para') {
-                entry.target.classList.add('animate__bounceIn','animate__delay-1.5s');
+                entry.target.classList.add('animate__flipInX','animate__delay-1.5s');
             }
             else if (entry.target.id == 'technologies-list') {
                 entry.target.classList.add('animate__fadeIn','animate__delay-1.7s')
@@ -29,11 +29,11 @@ const observer = new IntersectionObserver((entries) => {
                 entry.target.classList.add('animate__fadeIn');
             }
             else if(entry.target.id == 'contact-para' || entry.classList.id == 'contact-links-1'){
-                entry.target.classList.add('animate__bounceIn');
+                entry.target.classList.add('animate__flipInX');
             }
         }
         else {
-            entry.target.classList.remove('animate__animated', 'animate__bounceIn','animate__fadeIn','animate__bounceInDown');
+            entry.target.classList.remove('animate__animated', 'animate__flipInX','animate__fadeIn','animate__bounceInDown');
         }
     })
 }, {

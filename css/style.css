@@ -203,7 +203,7 @@ html {
     }
 
     .technologies-list li {
-        background-color: #f2f2f2;
+        background-color: #F7F7F7;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -230,7 +230,7 @@ html {
 
     .contact {
         padding: 70px 100px 100px 100px;
-        background-color: #f2f2f2;
+        background-color: #F7F7F7;
     }
 
     .contact-container {
@@ -299,7 +299,6 @@ html {
         flex-direction: column;
         gap: 20px;
         text-align: justify;
-        background-color: #E5E5E5;
         padding: 50px;
         border-radius: 5px;
         font-weight: 300;

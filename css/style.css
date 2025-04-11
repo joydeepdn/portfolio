@@ -18,14 +18,27 @@ html {
         position: fixed;
         top: 0;
         z-index: 1000;
-        border-bottom: 1px solid #E5E5E5;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-
-    .mynav .links {
+    .mynav .nav-links{
         display: flex;
-        gap: 20px;
-        margin-right: 20px;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 2em 0 0;
+    }
+    .mynav .links{
+        display: flex;
+        flex-direction: row;
+        margin: 0 2em 0 0;
+        gap: 2em;
+        justify-content: end;
+    }
+    #toggle-button img{
+        width: 30px;
+        height: 30px;
+    }
+    #toggle-button .moon{
+        display: none;
     }
 
     .logo h2 {
@@ -39,15 +52,8 @@ html {
         cursor: pointer;
     }
 
-    .hamburger {
+    .hamburger, .close-button {
         display: none;
-        color: #4d72be;
-        font-size: 25px;
-    }
-
-    .close-button {
-        display: none;
-        color: #4d72be;
     }
 
     .links a {
@@ -79,7 +85,7 @@ html {
         height: 100vh;
         display: flex;
         background-image: url(/assets/images/v1015-101a.jpg);
-        background-size: cover;
+        background-size: contain;
     }
 
     .container .hero-section {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/tablet.css">
     <link rel="stylesheet" href="/css/laptop.css">
+    <link rel="stylesheet" href="/css/dark-mode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,13 +26,20 @@
             <div class="logo">
                 <h2>Joydeep</h2>
             </div>
-            <ul class="links" id="links">
-                <li><a href="#container">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="close-button" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></li>
-            </ul>
-            <a id="hamburger" class="hamburger" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+            <div class="nav-links">
+                <ul class="links" id="links">
+                    <li><a href="#container">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="toggle-button">
+                    <img width="48" height="48" src="https://img.icons8.com/emoji/48/sun-emoji.png" alt="sun-emoji" class="sun" id="sun">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/full-moon--v1.png"
+                        alt="full-moon--v1" class="moon" id="moon">
+                </div>
+                <div id="close-button" class="close-button" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></div>
+                <div id="hamburger" class="hamburger" onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
+            </div>
         </nav>
     </header>
     <main id="main-div">
@@ -94,7 +102,8 @@
                                 alt="visual-studio-code-2019" />Visual Studio Code</li>
                         <li><img width="144" height="144" src="https://img.icons8.com/color/144/intellij-idea.png"
                                 alt="intellij-idea" />IntelliJ</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/dart.png" alt="dart" />Dart</li>
+                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/dart.png"
+                                alt="dart" />Dart</li>
                     </div>
         </section>
         <section class="contact">
@@ -124,7 +133,8 @@
                     </div>
                 </div>
                 <div class="contact-links-section" id="contact-links-section">
-                    <p class="contact-para" id="contact-para">I’d love to hear from you! Whether you have a project in mind, a question to ask,
+                    <p class="contact-para" id="contact-para">I’d love to hear from you! Whether you have a project in
+                        mind, a question to ask,
                         or just want to
                         connect, feel free to reach out.
                     </p>

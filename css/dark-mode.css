@@ -1,0 +1,9 @@
+.dark-mode .mynav{
+    background-color: #2C3E50;
+}
+.dark-mode .links a{
+    color : #ECF0F1;
+}
+.dark-mode .logo h2{
+    color: #ECF0F1;
+}

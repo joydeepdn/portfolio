@@ -5,63 +5,74 @@
           justify-content: space-between;
           border-bottom: 1px solid #E5E5E5;
       }
+      .mynav .nav-links{
+        margin: 0;
+        align-items: center;
+      }
 
       .logo h2{
           margin: 0;
           font-weight: 700;
       }
 
-      #links {
-          margin: 0;
-          height: 100%;
-          position: fixed;
-          width: 0;
-          z-index: 1;
-          top: 0;
-          right: 0;
-          background: #ffffff;
-          overflow-x: hidden;
-          padding: 60px 0 0;
-          transition: 0.2s;
-          flex-direction: column;
-          gap: 0;
-
+      #toggle-button{
+        display: flex;
+        margin: 0 20px 0 0;
+        align-items: center;
+      }
+      #toggle-button img{
+        width: 30px;
+        height: 30px;
       }
 
-      .links li {
-          display: flex;
-          border-top: 1px dotted #E5E5E5;
-          justify-content: start;
-          padding: 10px;
-          font-size: 25px;
-      }
+      #links{
+        margin: 0;
+        height: 100%;
+        position: fixed;
+        width: 0;
+        z-index: 1;
+        top: 64px;
+        right: 0;
+        background: #ffffff;
+        overflow-x: hidden;
+        padding: 0 0 0;
+        transition: 0.2s;
+        flex-direction: column;
+        gap: 0;
+        justify-content: start;
 
-      .links a {
-          font-size: 16px;
-          color: #6F8DCB;
-          padding: 0;
-          width: 100%;
-      }
+    }
 
-      .links a:hover {
-          background-color: #ffffff;
-          color: #6F8DCB;
-      }
+    .links li {
+        display: flex;
+        border-bottom: 1px dotted #E5E5E5;
+        justify-content: start;
+        padding: 10px;
+        font-size: 25px;
+        width: 100%;
+    }
 
-      .mynav .hamburger {
-          display: block;
-          font-weight: 200;
-      }
+    .links a {
+        font-size: 16px;
+        color: #6F8DCB;
+        padding: 0;
+        width: 100%;
+    }
 
-      .close-button {
-          display: block;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          padding: none;
-          border: none !important;
-      }
+    .links a:hover {
+        background-color: #ffffff;
+        color: #6F8DCB;
+    }
 
+    .hamburger{
+        display: block;
+        font-size: 25px;
+        color: #6F8DCB;
+    }
+    .close-button{
+        font-size: 25px;
+        color: #6F8DCB;
+    }
       .container {
           background-size: cover;
           background-repeat: no-repeat;
@@ -167,7 +178,6 @@
           margin: 0;
           gap: 2em;
       }
-
       .contact-header {
           font-size: 30px;
           margin: 0 0 40px 0;

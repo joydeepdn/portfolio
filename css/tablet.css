@@ -9,22 +9,26 @@
         margin: 0;
         font-weight: 700;
     }
-
-    #links {
+    .mynav .nav-links{
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #links{
         margin: 0;
         height: 100%;
         position: fixed;
         width: 0;
         z-index: 1;
-        top: 75px;
+        top: 85px;
         right: 0;
         background: #ffffff;
         overflow-x: hidden;
-        transition: 0.2s;
-        border: 1px solid #E5E5E5;
+        padding: 0 0 0;
         flex-direction: column;
         gap: 0;
         justify-content: start;
+        transition: 0.2s;
 
     }
 
@@ -34,25 +38,37 @@
         padding: 10px;
         justify-content: flex-start;
         width: 100%;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    .links a{
+        width: 100%;
+    }
+
+    #toggle-button{
+        margin: 0 40px 0 0;
+    }
+    #toggle-button img{
+        width: 45px;
+        height: 45px;
     }
 
     .links a {
-        font-size: 16px;
+        font-size: 20px;
         color: #6F8DCB;
-        padding: 0;
         text-align: left;
+        padding: 20px;
         
     }
-
     .hamburger{
         display: block;
+        font-size: 35px;
     }
     .close-button {
         /* display: block;
         position: absolute;
         top: 10px;
         right: 10px; */
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .container {
@@ -64,7 +80,7 @@
         display: flex;
         flex-direction: column-reverse;
         margin: 0;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         padding: 0 30px 0 30px;
     }
@@ -159,6 +175,9 @@
         padding: 0;
         gap: 0;
         max-width: 300px;
+    }
+    .contact-links{
+        margin: 20px 0 0 0;
     }
 
     .contact-links-section h3 {

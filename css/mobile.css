@@ -1,9 +1,9 @@
   @media (max-width:600px) {
-      .mynav {
+          .mynav {
           padding: 17px;
           height: auto;
           justify-content: space-between;
-          border-bottom: 1px solid #E5E5E5;
+
       }
       .mynav .nav-links{
         margin: 0;
@@ -31,21 +31,21 @@
         position: fixed;
         width: 0;
         z-index: 1;
-        top: 64px;
+        top: 63px;
         right: 0;
         background: #ffffff;
         overflow-x: hidden;
         padding: 0 0 0;
-        transition: 0.2s;
         flex-direction: column;
         gap: 0;
         justify-content: start;
+        transition: 0.2s;
 
     }
 
     .links li {
         display: flex;
-        border-bottom: 1px dotted #E5E5E5;
+        border-bottom: 1px solid #E5E5E5;
         justify-content: start;
         padding: 10px;
         font-size: 25px;
@@ -57,21 +57,20 @@
         color: #6F8DCB;
         padding: 0;
         width: 100%;
+        padding: 20px;
     }
 
     .links a:hover {
-        background-color: #ffffff;
-        color: #6F8DCB;
+        background-color: #6F8DCB;
+        color: #ffffff;
     }
 
     .hamburger{
         display: block;
         font-size: 25px;
-        color: #6F8DCB;
     }
     .close-button{
         font-size: 25px;
-        color: #6F8DCB;
     }
       .container {
           background-size: cover;
@@ -143,7 +142,6 @@
       }
 
       .technologies h3 {
-          text-align: center;
           font-size: 25px;
           font-family: "Inter";
           margin: 50px 0 30px 0;
@@ -152,29 +150,33 @@
 
       .technologies .technologies-list {
           list-style-type: none;
-          /* display: grid;
-          grid-template-columns: repeat(auto-fit, 144px); */
-          justify-content: flex-start;
-          gap: 0 20px 0 0;
-          margin: 20px 0 0 0;
+          flex-direction: column;
+          justify-content: center;
       }
 
       .technologies .technologies-list li {
-          background-color: #E5E5E5;
+          background-color: #F7F7F7;
           display: flex;
-          justify-content: flex-start;
+          justify-content: center;
           border-radius: 5px;
           padding: 10px;
+          width: auto;
+          height: auto;
+          flex-direction: column;
+      }
+      .technologies-list li:hover{
+        transform: scaleX(.9);
       }
       .technologies .technologies-list img {
-          width: 46px;
-          height: 46px;
+          width: 56px;
+          height: 56px;
+          margin: 0 0 5px 0;
       }
       .contact{
-        padding: 50px 17px 0 17px;
+        padding: 50px 17px 17px 17px;
       }
       .contact-container {
-          flex-direction: column-reverse;
+          flex-direction: column;
           margin: 0;
           gap: 2em;
       }
@@ -188,36 +190,17 @@
           justify-content: center;
           padding: 0;
           background-color: inherit;
+          gap: 0;
       }
-
-      .contact-links-section .contact-links {
-          display: none;
+      .contact-links{
+        margin: 30px 0 0 0;
       }
-
       .contact-links-section p {
           font-size: 13px;
       }
-
-      .social {
-          margin: 20px 0 20px 0;
-          display: block;
-      }
-
-      .social .contact-links {
-          list-style-type: none;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-      }
-
-      .social .contact-links img {
-          width: 46px;
-          height: 46px;
-      }
-
       .footer-class {
           font-size: 12px;
           padding: 17px;
+          flex-wrap: wrap;
       }
   }

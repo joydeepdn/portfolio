@@ -1,9 +1,62 @@
+   
 .dark-mode .mynav{
+    background-color: #2C3E50;
+}
+.dark-mode  .hamburger{
+    color: #ECF0F1;
+}
+.dark-mode .close-button{
+    color: #ECF0F1;
+}
+.dark-mode #links{
     background-color: #2C3E50;
 }
 .dark-mode .links a{
     color : #ECF0F1;
 }
+.dark-mode .links a:hover{
+    color: #2C3E50;
+    background-color: #ECF0F1;
+
+}
 .dark-mode .logo h2{
+    color: #ECF0F1;
+}
+.dark-mode .container{
+    background-image: url(/assets/images/image.jpg);
+}
+.dark-mode .left-section{
+    filter: brightness(0.6) contrast(1.2)
+}
+.dark-mode .right-section p{
+    color: #ffffff;
+}
+.dark-mode .right-section span{
+    color: #000000;
+    font-weight: 700;
+}
+.dark-mode .Connect button{
+    color: #ECF0F1;
+}
+.dark-mode .about-section{
+    background-color: #2C3E50;
+}
+.dark-mode .about-me p{
+    color: #ECF0F1;
+}
+.dark-mode .contact{
+    background-color: #273748;
+}
+.dark-mode .contact-links-section p{
+    color: #ECF0F1;
+}
+.dark-mode .contact-links li{
+    color: #ffffff;
+}
+.dark-mode .contact-links li:hover{
+    color: #D4D8D8;
+}
+.dark-mode .footer-class{
+    background-color: #2C3E50;
     color: #ECF0F1;
 }

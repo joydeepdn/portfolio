@@ -51,6 +51,9 @@ document.addEventListener('click', function (event) {
 });
 
 window.addEventListener('resize', () => {
+
+  main.style.opacity = '1';
+
   if (window.innerWidth > 1023) {
     links.style.width = "";
     openBtn.style.display = 'none';
@@ -75,10 +78,12 @@ toggleBtn.addEventListener('click', () =>{
   if(body.classList.contains('dark-mode')){
     sun.style.display = 'none';
     moon.style.display = 'block'
+    localStorage.setItem('dark-Mode', 'enabled');
   }
   else if(!body.classList.contains('dark-mode')){
      sun.style.display = 'block';
     moon.style.display = 'none'
+    localStorage.setItem('dark-mode', 'disabled')
   }
 })
 

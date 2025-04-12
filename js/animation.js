@@ -43,4 +43,11 @@ const elements = document.querySelectorAll(
 );
 elements.forEach(elements => observer.observe(elements));
 
+var typo = new Typed('.auto-type', {
+
+    strings: ['Frontend Developer', 'Backend-Developer', 'Full-stack Developer'],
+    typeSpeed: 140,
+    backSpeed: 140,
+    loop: true,
+});
 

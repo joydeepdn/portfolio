@@ -1,0 +1,208 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .mynav {
+        padding: 20px;
+        height: auto;
+        top: 0;
+        justify-content: space-between;
+    }
+    .logo h2{
+        margin: 0;
+        font-weight: 700;
+    }
+    .mynav .nav-links{
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #links{
+        margin: 0;
+        height: 100%;
+        position: fixed;
+        width: 0;
+        z-index: 1;
+        top: 85px;
+        right: 0;
+        background: #F7F7F7;
+        overflow-x: hidden;
+        padding: 0 0 0;
+        flex-direction: column;
+        gap: 0;
+        justify-content: start;
+        transition: 0.2s;
+
+    }
+
+    .links li {
+        text-align: center;
+        display: flex;
+        padding: 10px;
+        justify-content: flex-start;
+        width: 100%;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    .links a{
+        width: 100%;
+    }
+
+    #toggle-button{
+        margin: 0 40px 0 0;
+    }
+    #toggle-button img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .links a {
+        font-size: 20px;
+        color: #6F8DCB;
+        text-align: left;
+        padding: 20px;
+        
+    }
+    .hamburger{
+        display: block;
+        font-size: 35px;
+    }
+    .close-button {
+        /* display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px; */
+        font-size: 35px;
+    }
+
+    .container {
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+
+    .container .hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 30px 0 30px;
+    }
+    .right-section {
+        align-items: flex-start;
+    }
+
+    .right-section p {
+        text-align: start;
+        font-size: 40px;
+        line-height: 1.1;
+        color:#000000;
+    }
+    .right-section span{
+        color:#ffffff;
+    }
+
+    .Connect {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-container {
+        padding: 30px 30px 60px 30px;
+        margin: 0;
+    }
+
+    .about-me{
+        padding: 0 20px 0 20px;
+    }
+
+    .about-me h2 {
+        font-size: 40px;
+        padding: 0;
+        font-weight: 400;
+    }
+
+    .about-me p {
+        font-size: 17px;
+        text-align: justify;
+        font-weight: 300;
+    }
+    .technologies{
+        padding: 0 20px 0 20px;
+    }
+
+    .technologies h3{
+        text-align: center;
+        font-size: 25px;
+        font-family: "Inter";
+        margin: 50px 0 30px 0;
+        color: #6F8DCB;
+        font-weight: 400;
+    }
+    
+    .technologies .technologies-list{
+        list-style-type: none;
+        justify-content: center;
+        gap: 0 20px;
+    }
+    .technologies .technologies-list li{
+        background-color: #E5E5E5;
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 5px;
+    }
+    .technologies .technologies-list img{
+        width: 66px;
+        height: 66px;
+    }
+    .contact{
+        padding: 60px 30px 60px 30px;
+    }
+    .contact-container {
+        flex-direction: row;
+        gap: 0;
+        margin: 0;
+        justify-content: center;
+        align-items:flex-start;
+    }
+
+    .contact-header{
+        margin: 0 0 60px 0;
+        font-weight: 600;
+    }
+    #contact-form{
+        margin: 0 40px 0 0;
+    }
+    .contact-links-section {
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0;
+        gap: 0;
+        max-width: 300px;
+    }
+    .contact-links{
+        margin: 20px 0 0 0;
+    }
+
+    .contact-links-section h3 {
+        font-size: 30px;
+    }
+
+    .contact-links-section p {
+        font-size: 15px;
+    }
+    .social .contact-links{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .social .contact-links img{
+        width: 56px;
+        height: 56px;
+    }
+
+    .footer-class {
+        font-size: 11px;
+        padding: 20px;
+    }
+}

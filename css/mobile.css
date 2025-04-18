@@ -1,0 +1,206 @@
+  @media (max-width:600px) {
+          .mynav {
+          padding: 17px;
+          height: auto;
+          justify-content: space-between;
+
+      }
+      .mynav .nav-links{
+        margin: 0;
+        align-items: center;
+      }
+
+      .logo h2{
+          margin: 0;
+          font-weight: 700;
+      }
+
+      #toggle-button{
+        display: flex;
+        margin: 0 20px 0 0;
+        align-items: center;
+      }
+      #toggle-button img{
+        width: 30px;
+        height: 30px;
+      }
+
+      #links{
+        margin: 0;
+        height: 100%;
+        position: fixed;
+        width: 0;
+        z-index: 1;
+        top: 63px;
+        right: 0;
+        background: #F7F7F7;
+        overflow-x: hidden;
+        padding: 0 0 0;
+        flex-direction: column;
+        gap: 0;
+        justify-content: start;
+        transition: 0.2s;
+
+    }
+
+    .links li {
+        display: flex;
+        border-bottom: 1px solid #E5E5E5;
+        justify-content: start;
+        padding: 10px;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .links a {
+        font-size: 16px;
+        color: #6F8DCB;
+        padding: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .links a:hover {
+        background-color: #6F8DCB;
+        color: #ffffff;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 25px;
+    }
+    .close-button{
+        font-size: 25px;
+    }
+      .container {
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+
+      .container .hero-section {
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 0;
+          justify-content: center;
+          padding: 0 17px 0 17px;
+      }
+
+      .left-section {
+          display: none;
+      }
+
+      .right-section {
+          align-items: flex-start;
+      }
+
+      .right-section p {
+          text-align: left;
+          font-size: 37px;
+          color: #000000;
+      }
+      .right-section span{
+        color: #ffffff;
+      }
+
+      .Connect {
+          flex-direction: column;
+          gap: 20px;
+      }
+
+      .Connect button {
+          color: #ffffff;
+          width: 130px;
+      }
+
+      .Connect button:hover {
+          transform: translateY(-4px) translateX(-2px);
+      }
+
+      .about-container {
+          padding: 70px 17px 70px 17px;
+          margin: 0;
+      }
+
+      .about-me {
+          padding: 0;
+      }
+
+      .about-me h2 {
+          font-size: 30px;
+          padding: 0;
+          text-align: center;
+          margin: 0 0 20px 0;
+      }
+
+      .about-me p {
+          font-size: 13px;
+          text-align: left;
+      }
+
+      .technologies {
+          padding: 0;
+      }
+
+      .technologies h3 {
+          font-size: 25px;
+          font-family: "Inter";
+          margin: 50px 0 30px 0;
+          color: #6F8DCB;
+      }
+
+      .technologies .technologies-list {
+          list-style-type: none;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .technologies .technologies-list li {
+          background-color: #F7F7F7;
+          display: flex;
+          justify-content: center;
+          border-radius: 5px;
+          padding: 10px;
+          width: auto;
+          height: auto;
+          flex-direction: column;
+      }
+      .technologies-list li:hover{
+        transform: scaleX(.9);
+      }
+      .technologies .technologies-list img {
+          width: 56px;
+          height: 56px;
+          margin: 0 0 5px 0;
+      }
+      .contact{
+        padding: 50px 17px 17px 17px;
+      }
+      .contact-container {
+          flex-direction: column;
+          margin: 0;
+          gap: 2em;
+      }
+      .contact-header {
+          font-size: 30px;
+          margin: 0 0 40px 0;
+          text-align: center;
+      }
+      .contact-links-section {
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          background-color: inherit;
+          gap: 0;
+      }
+      .contact-links{
+        margin: 30px 0 0 0;
+      }
+      .contact-links-section p {
+          font-size: 13px;
+      }
+      .footer-class {
+          font-size: 12px;
+          padding: 17px;
+          flex-wrap: wrap;
+      }
+  }

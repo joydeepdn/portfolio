@@ -3,6 +3,7 @@
           padding: 17px;
           height: auto;
           justify-content: space-between;
+          background-color: #ffffff;
 
       }
       .mynav .nav-links{
@@ -13,25 +14,26 @@
       .logo h2{
           margin: 0;
           font-weight: 700;
+          font-size: 20px;
       }
 
       #toggle-button{
         display: flex;
-        margin: 0 20px 0 0;
+        margin: 0 10px 0 0;
         align-items: center;
       }
       #toggle-button img{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
       }
 
       #links{
         margin: 0;
+        width: 0;
         height: 100%;
         position: fixed;
-        width: 0;
         z-index: 1;
-        top: 63px;
+        top: 61px;
         right: 0;
         background: #F7F7F7;
         overflow-x: hidden;
@@ -39,8 +41,7 @@
         flex-direction: column;
         gap: 0;
         justify-content: start;
-        transition: 0.2s;
-
+        transition: 0.2s ease-in;
     }
 
     .links li {
@@ -57,7 +58,7 @@
         color: #6F8DCB;
         padding: 0;
         width: 100%;
-        padding: 20px;
+        padding: 10px;
     }
 
     .links a:hover {
@@ -67,14 +68,15 @@
 
     .hamburger{
         display: block;
-        font-size: 25px;
+        font-size: 20px;
     }
     .close-button{
-        font-size: 25px;
+        font-size: 20px;
     }
       .container {
           background-size: cover;
           background-repeat: no-repeat;
+          background-position: top;
       }
 
       .container .hero-section {
@@ -83,6 +85,7 @@
           padding: 0;
           justify-content: center;
           padding: 0 17px 0 17px;
+          margin: 0;
       }
 
       .left-section {
@@ -99,7 +102,7 @@
           color: #000000;
       }
       .right-section span{
-        color: #ffffff;
+        color: #4d72be;
       }
 
       .Connect {
@@ -117,7 +120,7 @@
       }
 
       .about-container {
-          padding: 70px 17px 70px 17px;
+          padding: 17px;
           margin: 0;
       }
 
@@ -126,15 +129,15 @@
       }
 
       .about-me h2 {
-          font-size: 30px;
+          font-size: 25px;
           padding: 0;
-          text-align: center;
+          text-align: left;
           margin: 0 0 20px 0;
       }
 
       .about-me p {
           font-size: 13px;
-          text-align: left;
+          text-align: justify;
       }
 
       .technologies {
@@ -142,43 +145,41 @@
       }
 
       .technologies h3 {
-          font-size: 25px;
-          font-family: "Inter";
-          margin: 50px 0 30px 0;
+          font-size: 20px;
+          margin: 20px 0 20px 0;
           color: #6F8DCB;
+          text-align: start;
       }
 
       .technologies .technologies-list {
           list-style-type: none;
-          flex-direction: column;
-          justify-content: center;
+          flex-direction: row;
+          justify-content: flex-start;
+          
       }
 
       .technologies .technologies-list li {
+        margin: 4px;
           background-color: #F7F7F7;
           display: flex;
           justify-content: center;
           border-radius: 5px;
           padding: 10px;
-          width: auto;
-          height: auto;
           flex-direction: column;
-      }
-      .technologies-list li:hover{
-        transform: scaleX(.9);
+          font-size: 12px;
       }
       .technologies .technologies-list img {
-          width: 56px;
-          height: 56px;
+          width: 36px;
+          height: 36px;
           margin: 0 0 5px 0;
       }
       .contact{
-        padding: 50px 17px 17px 17px;
+        padding: 20px 17px 17px 17px;
       }
       .contact-container {
           flex-direction: column;
           margin: 0;
-          gap: 2em;
+          gap: 0;
       }
       .contact-header {
           font-size: 30px;
@@ -186,21 +187,27 @@
           text-align: center;
       }
       .contact-links-section {
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
           padding: 0;
           background-color: inherit;
           gap: 0;
       }
       .contact-links{
-        margin: 30px 0 0 0;
+        margin: 40px 0 0 0;
+        gap: 0;
+      }
+      .contact-links li{
+        width: 35px;
+        height: 35px;
+        padding: 0;
       }
       .contact-links-section p {
           font-size: 13px;
       }
       .footer-class {
-          font-size: 12px;
-          padding: 17px;
+          font-size: 10px;
+          padding: 15px;
           flex-wrap: wrap;
       }
   }

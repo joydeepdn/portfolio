@@ -21,7 +21,6 @@
     }
     .logo h2{
         color: #4d72be;
-        font-family: 'Inter';
         margin-left: 20px;
         font-weight: 200;
     }
@@ -47,7 +46,6 @@
         font-size: 20px;
         list-style-type: none;
         text-decoration: none;
-        font-family: 'Inter';
         padding: 8px;
         border-radius: 5px;
         font-weight: 300;
@@ -70,14 +68,16 @@
         display: flex;
         background-image: url(/assets/images/v1015-101a.jpg);
         background-size: cover;
-        padding: 0 40px 0 40px;
+        background-repeat: no-repeat;
     }
     .container .hero-section {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-evenly;
         align-items: center;
+        margin: 0;
         width: 100%;
+        padding: 0 40px 0 40px;
     }
     .right-section {
         display: flex;
@@ -86,21 +86,6 @@
         width: 100%;
         gap: 20px;
         height: auto;
-    }
-    
-    .right-section p {
-    
-        text-align: start;
-        font-size: 55px;
-        font-family: 'Inter';
-        height: auto;
-        color: #000000;
-        font-weight: 1000;
-    }
-    .left-section {
-        max-width: 500px;
-        animation: 'bounce';
-        animation-duration: 2s;
     }
     .right-section span {
         color: #FFFFFF;
@@ -121,7 +106,6 @@
     }
     
     .Connect button {
-        font-family: 'Inter';
         padding: 10px;
         width: 200px;
         height: 60px;
@@ -131,7 +115,7 @@
         border: none;
         background-color: #4d72be;
         color: #FFFFFF;
-        border-radius: 5px;
+        border-radius: 10rem;
     }
     
     .Connect button:hover{
@@ -147,7 +131,6 @@
     }
     .about-me h2 {
         margin: 0 0 50px 0;
-        font-family: "Inter";
         color: #4d85be;
         font-size: 40px;
         text-align: center;
@@ -156,7 +139,6 @@
     
     .about-me p {
         text-align: justify;
-        font-family: "Inter";
         color: #070d09;
         line-height: 1.6;
         font-size: 17px;
@@ -165,7 +147,6 @@
     .technologies h3{
         margin: 0 0 20px 0;
         font-size: 30px;
-        font-family: "Inter";
         color: #4d85be;
         text-align: center;
         font-weight: 400;
@@ -187,7 +168,6 @@
         flex-direction: row;
         align-items: center;
         padding: 15px;
-        font-family: "Inter";
         font-size: 13px;
         border-radius: 5px;
         width: 150px;
@@ -211,13 +191,13 @@
     .contact-container {
         display: flex;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: row;
+        margin: 0;
     }
     .contact-header{
         text-align: center;
         font-size: 35px;
-        font-family: "Inter";
         color: #4d85be;
         margin: 0 0 50px 0;
         font-weight: 500;
@@ -267,7 +247,7 @@
         flex-direction: column;
         gap: 0;
         text-align: justify;
-        padding: 0 20px;
+        padding: 0 20px 0 20px;
         border-radius:5px;
         font-weight: 300;
     }
@@ -291,14 +271,12 @@
         color: #4d72be;
     }
     .contact-links-section p {
-        font-family: "Inter";
         line-height: 1.6;
         font-size: 18px;
     }
     
     .contact-links-section h3 {
         font-size: 40px;
-        font-family: "Inter";
         text-align: justify;
         color: #be4d72;
     }
@@ -313,7 +291,6 @@
         padding:10px;
         color: #070d09;
         justify-content: center;
-        font-family: "Inter";
         font-size: 16px;
     }
     .footer-class img{

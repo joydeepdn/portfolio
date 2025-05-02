@@ -1,4 +1,5 @@
 const links = document.getElementById('links');
+const navLinks = document.getElementById('nav-links')
 const openBtn = document.getElementById('hamburger');
 const main = document.getElementById('main-div');
 const closeBtn = document.getElementById('close-button')
@@ -16,10 +17,10 @@ function openNav() {
   main.style.opacity = 0.5;
 
   if (screen.width <= 600) {
-    links.style.width = "250px";
+    links.style.width = "300px";
   }
   else if (screen.availWidth > 600) {
-    links.style.width = '500px'
+    links.style.width = '700px'
   }
   if(body.classList.contains('dark-mode')){
     main.style.opacity = 0.7;
@@ -29,7 +30,7 @@ function openNav() {
 function closeNav() {
   openBtn.style.display = 'block'
   closeBtn.style.display = 'none'
-  document.getElementById('links').style.width = "0";
+  links.style.width = '0'
   main.style.opacity = 1;
 }
 
@@ -51,8 +52,6 @@ document.addEventListener('click', function (event) {
 
 window.addEventListener('resize', () => {
 
-  main.style.opacity = '1';
-
   if (window.innerWidth > 1023) {
     links.style.width = "";
     openBtn.style.display = 'none';
@@ -64,9 +63,6 @@ window.addEventListener('resize', () => {
 
   if (closeBtn.style.display == 'block') {
     openBtn.style.display = 'none';
-  }
-  if (window.innerWidth > 600 && links.style.width > '0px') {
-    links.style.width = '500px'
   }
 });
 
@@ -84,4 +80,8 @@ toggleBtn.addEventListener('click', () =>{
     moon.style.display = 'none'
     localStorage.setItem('dark-mode', 'disabled')
   }
+})
+
+window.addEventListener('scroll', () =>{
+  
 })

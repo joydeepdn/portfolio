@@ -1,6 +1,6 @@
 @media screen and (min-width:768px) and (max-width:1023px) {
     .mynav {
-        padding: 20px;
+        padding: 17px 20px 17px 20px;
         height: auto;
         top: 0;
         justify-content: space-between;
@@ -8,6 +8,7 @@
     .logo h2{
         margin: 0;
         font-weight: 700;
+        font-size: 20px;
     }
     .mynav .nav-links{
         flex: 1;
@@ -20,7 +21,7 @@
         position: fixed;
         width: 0;
         z-index: 1;
-        top: 85px;
+        top: 64px;
         right: 0;
         background: #F7F7F7;
         overflow-x: hidden;
@@ -45,11 +46,11 @@
     }
 
     #toggle-button{
-        margin: 0 40px 0 0;
+        margin: 0 20px 0 0;
     }
     #toggle-button img{
-        width: 45px;
-        height: 45px;
+        width: 30px;
+        height: 30px;
     }
 
     .links a {
@@ -61,50 +62,47 @@
     }
     .hamburger{
         display: block;
-        font-size: 35px;
+        font-size: 20px;
     }
     .close-button {
         /* display: block;
         position: absolute;
         top: 10px;
         right: 10px; */
-        font-size: 35px;
+        font-size: 20px;
     }
 
     .container {
         height: 100vh;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
     .container .hero-section {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
         margin: 0;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        padding: 0 30px 0 30px;
+        padding: 0 20px 0 20px;
     }
     .right-section {
         align-items: flex-start;
+        max-width: 400px;
     }
-
     .right-section p {
         text-align: start;
         font-size: 40px;
         line-height: 1.1;
         color:#000000;
     }
-    .right-section span{
-        color:#ffffff;
-    }
-
     .Connect {
         flex-direction: column;
         gap: 20px;
     }
 
     .about-container {
-        padding: 30px 30px 60px 30px;
+        padding: 20px 20px 60px 20px;
         margin: 0;
     }
 
@@ -142,7 +140,7 @@
         gap: 0 20px;
     }
     .technologies .technologies-list li{
-        background-color: #E5E5E5;
+        background-color: #F7F7F7;
         display: flex;
         justify-content: flex-start;
         border-radius: 5px;
@@ -152,7 +150,7 @@
         height: 66px;
     }
     .contact{
-        padding: 60px 30px 60px 30px;
+        padding: 60px 20px 60px 20px;
     }
     .contact-container {
         flex-direction: row;

@@ -80,7 +80,7 @@ html {
     .container {
         height: 100vh;
         display: flex;
-        background-image: url(/assets/images/67037.jpg);
+        background-image: url(../assets/images/67037.jpg);
         background-size: cover;
         background-position: bottom;
         }

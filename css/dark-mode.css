@@ -28,7 +28,7 @@
     color: #ECF0F1;
 }
 .dark-mode .container{
-  background-image: url(/assets/images/darkened.jpg);
+  background-image: url(../assets/images/darkened.jpg);
 }
 .dark-mode .left-section{
     filter: brightness(0.6) contrast(1.2)

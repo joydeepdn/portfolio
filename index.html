@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/tablet.css">
     <link rel="stylesheet" href="/css/laptop.css">
-    <link rel="stylesheet" href="/css/dark-mode.css">
+    <link rel="stylesheet" href="/css/dark-mode.css" id="dark-theme">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,13 +31,14 @@
                 <ul class="links" id="links">
                     <li><a href="#container">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/joydeepdn"><i class="fa-brands fa-github"></i></a></li>
                 </ul>
                 <div id="toggle-button">
-                    <img width="48" height="48" src="https://img.icons8.com/emoji/48/sun-emoji.png" alt="sun-emoji"
-                        class="sun" id="sun">
-                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/full-moon--v1.png"
-                        alt="full-moon--v1" class="moon" id="moon">
+                    <i class="fa-solid fa-sun" class="sun" id="sun"></i>
+                    <i class="fa-solid fa-moon" class="moon" id="moon"></i>
                 </div>
                 <div id="close-button" class="close-button" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></div>
                 <div id="hamburger" class="hamburger" onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
@@ -47,18 +48,14 @@
     <main id="main-div">
         <div class="container" id="container">
             <div class="hero-section">
-                <div class="left-section" id="left-section">
-                    <img src="/assets/images/3411109-removebg-preview.png">
-                </div>
                 <div class="right-section" id="right-section">
                     <p>
                         Hello! I'm Joydeep Debnath <br>
                         <span class="auto-type"></span>
                     </p>
-                    <!-- <a href="https://www.linkedin.com/in/joydeep-debnath-968a33229/" target="_blank"> -->
                     <div class="Connect">
-                        <button>Connect</button>
-                        <button>Resume</button>
+                        <a href="https://www.linkedin.com/in/joydeepdn/"><button>Connect</button></a>
+                        <a href="https://drive.google.com/file/d/1gtKOiLY3MliUiz8FMJXGRRB7NStTMvj2/view?usp=sharing"><button>Resume</button></a>
                     </div>
                 </div>
             </div>
@@ -78,35 +75,95 @@
                     </p>
                 </div>
                 <div class="technologies">
-                    <h3>Technologies and tools I work with</h3>
+                    <h3>My Tech Stack</h3>
                     <div class="technologies-list" id="technologies-list">
-                        <li><img width="144" height="144"
+                        <li><img loading="lazy" width="144" height="144"
                                 src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png"
                                 alt="java-coffee-cup-logo--v1" />Java</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/html-5--v2.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/html-5--v2.png"
                                 alt="html-5--v2" />HTML</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/css3.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/css3.png"
                                 alt="css3" />CSS</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/javascript--v1.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/javascript--v1.png"
                                 alt="javascript--v1" />Javascript</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/c-plus-plus-logo.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/c-plus-plus-logo.png"
                                 alt="c-plus-plus-logo" />C++</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/mysql-logo.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/mysql-logo.png"
                                 alt="mysql-logo" />MySQL</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/c-programming.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/c-programming.png"
                                 alt="c-programming" />C</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/git.png" alt="git" />Git
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/git.png" alt="git" />Git
                         </li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/github.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/github.png"
                                 alt="github" />Github</li>
-                        <li><img width="144" height="144"
+                        <li><img loading="lazy" width="144" height="144"
                                 src="https://img.icons8.com/color/144/visual-studio-code-2019.png"
                                 alt="visual-studio-code-2019" />Visual Studio Code</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/intellij-idea.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/intellij-idea.png"
                                 alt="intellij-idea" />IntelliJ</li>
-                        <li><img width="144" height="144" src="https://img.icons8.com/color/144/dart.png"
+                        <li><img loading="lazy" width="144" height="144" src="https://img.icons8.com/color/144/dart.png"
                                 alt="dart" />Dart</li>
                     </div>
+        </section>
+        <section class="services" id="services">
+            <div class="services-container">
+                <h3>Services I provide</h3>
+                <ul id="services-lists">
+                    <li>
+                        <p>Academic Assistance</p>
+                        <img loading="lazy" src="/assets/images/mortarboard_2070881.png" alt="academic">
+                        As a Subject Matter Expert in computer science, I bring deep knowledge and practical insights to
+                        help students and professionals excel. Whether it’s mastering complex algorithms, understanding
+                        system design, or tackling challenging projects, I provide clear explanations and personalized
+                        guidance. My goal is to empower you with the skills and confidence to solve problems
+                        independently and succeed academically.
+                    </li>
+                    <li>
+                        <p>Backend Development</p>
+                        <img loading="lazy" src="assets/images/coding-icon_12254068.png" alt="backend">
+                        I love building the backbone of applications—the part you don’t see, but that makes everything
+                        work smoothly. My backend development experience includes designing APIs, managing databases,
+                        and ensuring security and scalability for web and mobile apps. Whether it’s Python, Node.js, or
+                        Java, I focus on writing clean, efficient code and creating systems that are reliable and easy
+                        to maintain
+                    </li>
+                    <li>
+                        <p>Frontend Development</p>
+                        <img loading="lazy" src="assets/images/browser_2605842.png" alt="frontend">
+                        Turning ideas into interactive, responsive web experiences is what I do best. I use tools like
+                        React, Vue.js, HTML, and CSS to create user interfaces that are not only visually appealing but
+                        also easy to use. I pay close attention to accessibility and performance, making sure every user
+                        has a great experience, no matter their device or browser
+                    </li>
+                    <li>
+                        <p>UI/UX Design</p>
+                        <img loading="lazy" src="/assets/images/ui_7858975.png" alt="UI/UX">
+                        Great design bridges the gap between people and technology. I enjoy working on UI/UX for
+                        computer science projects, from sketching wireframes to building clickable prototypes. My
+                        process is user-centered: I listen, test, and refine until the interface feels intuitive and
+                        engaging. I believe that smart design can make even the most complex software feel approachable
+                        and enjoyable to use
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="projects-section">
+                <h3>Projects</h3>
+                <ul>
+                        <li><img loading="lazy" src="/assets/images/bank-atm-operation-enter-password.jpg" alt="atm"><span>ATM simulation</span>
+                            <div class="showcase"><p> A simple ATM simulation program using C++. It allows users to perform banking operations
+                            such as balance inquiry, cash withdrawal, and deposit through a console interface. The
+                            project demonstrates user authentication and menu-driven programming.</p><a href="https://github.com/joydeepdn/cpp">View project<i class="fa-solid fa-arrow-right"></i></a></div>
+                    </li>
+                        <li><img loading="lazy" src="/assets/images/Screenshot (16).png" alt="wokwi-snapshot">
+                        <span>Earthquake Detector Simulation</span>
+                        <div class="showcase"><p> An earthquake detector simulation built using Wokwi's Arduino simulator. The system uses an
+                            accelerometer to monitor vibrations and triggers an alert (buzzer and LCD warning) if the
+                            detected acceleration exceeds a set threshold, simulating earthquake detection</p><a href="https://wokwi.com/projects/428390228641645569">View project<i class="fa-solid fa-arrow-right"></i></a></div>
+                        </li>
+                </ul>
+            </div>
         </section>
         <section class="contact">
             <h3 class="contact-header">Get in touch</h3>
@@ -127,10 +184,10 @@
                         connect, feel free to reach out.
                     </p>
                     <ul class="contact-links">
-                        <li><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-discord"></i></li>
-                        <li><i class="fa-solid fa-envelope"></i></li>
+                        <li><a href="https://www.linkedin.com/in/joydeepdn/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/joydeepdn"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a></li>
+                        <li><a href="mailto:deepj0147@gmail.com?subject=Your%20Subject&body=Your%20Body"><i class="fa-solid fa-envelope"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -150,4 +207,5 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="module" src="/js/animation.js"></script>
 </body>
+
 </html>

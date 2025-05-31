@@ -1,97 +1,73 @@
   @media (max-width:600px) {
-          .mynav {
+      .mynav {
           padding: 17px;
-          height: auto;
-          justify-content: space-between;
-          background-color: #ffffff;
-
       }
-      .mynav .nav-links{
-        margin: 0;
-        align-items: center;
+      .logo h2 {
+          font-size: 20px;
+      }
+      #toggle-button {
+          margin: 0 10px 0 0;
       }
 
-      .logo h2{
+      #links {
+          display: none;
+          width: 80%;
+          height: 100%;
+      }
+
+      #links.open {
+          display: block;
           margin: 0;
-          font-weight: 700;
+          position: fixed;
+          z-index: 1;
+          top: 60px;
+          right: 0;
+          background: #F7F7F7;
+          overflow-x: hidden;
+          padding: 0 0 0;
+          flex-direction: column;
+          gap: 0;
+          justify-content: start;
+      }
+
+      .links li {
+          display: flex;
+          border-bottom: 1px solid #E5E5E5;
+          justify-content: start;
+          font-size: 25px;
+          width: 100%;
+      }
+
+      .links a {
+          font-size: 16px;
+          width: 100%;
+          padding: 5px;
+          margin: 10px;
+      }
+
+      .hamburger {
+          display: block;
           font-size: 20px;
       }
 
-      #toggle-button{
-        display: flex;
-        margin: 0 10px 0 0;
-        align-items: center;
-      }
-      #toggle-button img{
-        width: 25px;
-        height: 25px;
+      .hidden {
+          display: none;
       }
 
-      #links{
-        margin: 0;
-        width: 0;
-        height: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 61px;
-        right: 0;
-        background: #F7F7F7;
-        overflow-x: hidden;
-        padding: 0 0 0;
-        flex-direction: column;
-        gap: 0;
-        justify-content: start;
-        transition: 0.2s ease-in;
-    }
-
-    .links li {
-        display: flex;
-        border-bottom: 1px solid #E5E5E5;
-        justify-content: start;
-        padding: 10px;
-        font-size: 25px;
-        width: 100%;
-    }
-
-    .links a {
-        font-size: 16px;
-        color: #6F8DCB;
-        padding: 0;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .links a:hover {
-        background-color: #6F8DCB;
-        color: #ffffff;
-    }
-
-    .hamburger{
-        display: block;
-        font-size: 20px;
-    }
-    .close-button{
-        font-size: 20px;
-    }
-      .container {
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: top;
+      .close-button {
+          font-size: 20px;
       }
 
+      .close-button.visible {
+          display: block;
+      }
       .container .hero-section {
-          display: flex;
-          flex-direction: column-reverse;
-          padding: 0;
+          flex-direction: column;
           justify-content: center;
           padding: 0 17px 0 17px;
           margin: 0;
       }
-
-      .left-section {
-          display: none;
-      }
-
+      
       .right-section {
           align-items: flex-start;
       }
@@ -99,35 +75,22 @@
       .right-section p {
           text-align: left;
           font-size: 37px;
-          color: #000000;
       }
-      .right-section span{
-        color: #4d72be;
-      }
-
       .Connect {
           flex-direction: column;
           gap: 20px;
       }
 
       .Connect button {
-          color: #ffffff;
           width: 130px;
       }
-
-      .Connect button:hover {
-          transform: translateY(-4px) translateX(-2px);
-      }
-
       .about-container {
           padding: 17px;
           margin: 0;
       }
-
       .about-me {
           padding: 0;
       }
-
       .about-me h2 {
           font-size: 25px;
           padding: 0;
@@ -137,7 +100,6 @@
 
       .about-me p {
           font-size: 13px;
-          text-align: justify;
       }
 
       .technologies {
@@ -147,67 +109,128 @@
       .technologies h3 {
           font-size: 20px;
           margin: 20px 0 20px 0;
-          color: #6F8DCB;
-          text-align: start;
+          text-align: center;
       }
-
-      .technologies .technologies-list {
-          list-style-type: none;
-          flex-direction: row;
-          justify-content: flex-start;
-          
-      }
-
       .technologies .technologies-list li {
-        margin: 4px;
-          background-color: #F7F7F7;
-          display: flex;
+          width: 150px;
+          height: 80px;
+          margin: 5px;
+          padding: 5px;
           justify-content: center;
+          font-size: 13px;
           border-radius: 5px;
-          padding: 10px;
+      }
+
+      .technologies .technologies-list img {
+          width: 50px;
+          height: 50px;
+          margin: 5px;
+      }
+
+      .services {
+          padding: 40px 17px;
+      }
+
+      .services-container {
+          margin: 0;
+          padding: 0;
+      }
+
+      .services-container h3 {
+          font-size: 30px;
+          text-align: center;
+          margin: 0 0 20px 0;
+      }
+
+      .services-container ul {
           flex-direction: column;
+      }
+
+      .services li {
+          width: auto;
+          height: auto;
+          font-size: 12px;
+          margin: 0;
+          padding: 15px;
+          margin: 10px 0 10px 0;
+      }     
+      .services li img {
+          width: 100px;
+          height: 100px;
+          margin: 0 0 10px 0;
+
+      }
+
+      .services ul:first-child {
+          margin-top: 0;
+      }
+
+      .services li p {
+          font-size: 18px;
+          font-weight: 350;
+          font-weight: 700;
+          margin: 0 0 10px 0;
+      }
+
+      .projects-section {
+          margin: 0;
+          padding: 40px 17px;
+      }
+
+      .projects-section h3 {
+          margin: 0 0 20px 0;
+      }
+
+      .projects-section ul {
+          flex-direction: column;
+      }
+
+      .projects-section ul :first-child {
+          margin-top: 0;
+      }
+
+      .projects-section li {
+          width: auto;
+          height: auto;
           font-size: 12px;
       }
-      .technologies .technologies-list img {
-          width: 36px;
-          height: 36px;
-          margin: 0 0 5px 0;
+      .projects-section li .showcase{
+        padding: 10px;
       }
-      .contact{
-        padding: 20px 17px 17px 17px;
+      .projects-section li span{
+        margin: 0 10px 0 10px;
       }
+      .contact {
+          padding: 20px 17px 17px 17px;
+      }
+
       .contact-container {
           flex-direction: column;
           margin: 0;
           gap: 0;
       }
+
       .contact-header {
           font-size: 30px;
           margin: 0 0 40px 0;
           text-align: center;
       }
+
       .contact-links-section {
-          align-items: flex-start;
           justify-content: center;
+          padding: 10px;
+      }
+      .contact-links li {
+          width: 35px;
+          height: 35px;
           padding: 0;
-          background-color: inherit;
-          gap: 0;
-      }
-      .contact-links{
-        margin: 40px 0 0 0;
-        gap: 0;
-      }
-      .contact-links li{
-        width: 35px;
-        height: 35px;
-        padding: 0;
       }
       .contact-links-section p {
           font-size: 13px;
       }
+
       .footer-class {
           font-size: 10px;
           padding: 15px;
-          flex-wrap: wrap;
       }
   }

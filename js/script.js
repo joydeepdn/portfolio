@@ -8,80 +8,55 @@ const sun = document.getElementById('sun')
 const moon = document.getElementById('moon');
 const body = document.body;
 const myNav = document.getElementById('mynav');
+const theme = localStorage.getItem('theme')
 
 
 
 function openNav() {
-  openBtn.style.display = 'none'
-  closeBtn.style.display = 'block'
-  main.style.opacity = 0.5;
-
-  if (screen.width <= 600) {
-    links.style.width = "300px";
-  }
-  else if (screen.availWidth > 600) {
-    links.style.width = '700px'
-  }
-  if(body.classList.contains('dark-mode')){
-    main.style.opacity = 0.7;
+  if (window.innerWidth <= 600) {
+    links.classList.add('open')
+    openBtn.classList.add('hidden')
+    closeBtn.classList.add('visible')
   }
 }
 
 function closeNav() {
-  openBtn.style.display = 'block'
-  closeBtn.style.display = 'none'
-  links.style.width = '0'
-  main.style.opacity = 1;
+  links.classList.remove('open');
+  openBtn.classList.remove('hidden');
+  closeBtn.classList.remove('visible');
 }
-
-openBtn.addEventListener('click', function (event) {
-  openNav();
-  event.stopPropagation();
-})
-
 document.addEventListener('click', function (event) {
-  if (links.style.width == 0) {
-    return;
-  }
-  else {
-    if (!myNav.contains(event.target) && !links.contains(event.target) && links.style.width !== '0' && screen.width < 1023) {
+  if (!myNav.contains(event.target) && !links.contains(event.target)) {
       closeNav();
     }
-  }
 });
 
-window.addEventListener('resize', () => {
+toggleBtn.addEventListener('click', () => {
 
-  if (window.innerWidth > 1023) {
-    links.style.width = "";
-    openBtn.style.display = 'none';
-    closeBtn.style.display = 'none';
-  }
-  else if (screen.width <= 1024) {
-    openBtn.style.display = 'block';
-  }
+  body.classList.toggle('dark-mode');
 
-  if (closeBtn.style.display == 'block') {
-    openBtn.style.display = 'none';
-  }
-});
-
-toggleBtn.addEventListener('click', () =>{
-
-  body.classList.toggle('dark-mode')
-
-  if(body.classList.contains('dark-mode')){
+  if (body.classList.contains('dark-mode')) {
     sun.style.display = 'none';
     moon.style.display = 'block'
-    localStorage.setItem('dark-Mode', 'enabled');
+    localStorage.setItem('theme', 'dark-theme')
   }
-  else if(!body.classList.contains('dark-mode')){
-     sun.style.display = 'block';
+  else if (!body.classList.contains('dark-mode')) {
+    sun.style.display = 'block';
     moon.style.display = 'none'
-    localStorage.setItem('dark-mode', 'disabled')
+    localStorage.setItem('theme', 'light-theme')
   }
 })
 
-window.addEventListener('scroll', () =>{
-  
+window.addEventListener('DOMContentLoaded', () => {
+  if (theme === 'dark-theme') {
+    body.classList.add('dark-mode')
+    sun.style.display = 'none';
+    moon.style.display = 'block'
+  }
+  else {
+    localStorage.setItem('theme', 'light-theme')
+    body.classList.remove('dark-mode')
+    sun.style.display = 'block';
+    moon.style.display = 'none'
+  }
 })

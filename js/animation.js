@@ -8,30 +8,13 @@ const observer = new IntersectionObserver((entries) => {
                 observer.unobserve(entry.target)
             }
             else if (entry.target.id == 'about-me-para') {
-                if (screen.width > 1023) {
-                    entry.target.classList.add('animate__flipInX', 'animate__delay-1.5s');
-                }
-                else if (screen.width < 1023) {
-                    entry.target.classList.add('animate__fadeIn', 'animate__delay-1.7s')
-                }
-            }
-            else if (entry.target.id == 'technologies-list') {
-                entry.target.classList.add('animate__fadeIn', 'animate__delay-1.7s')
-            }
-            else if (entry.target.id == 'contact-form' || entry.target.id == 'contact-links-section') {
-                entry.target.classList.add('animate__fadeIn');
-            }
-            else if (entry.target.id == 'contact-para') {
-                entry.target.classList.add('animate__flipInX');
+                entry.target.classList.add('animate__fadeIn', 'animate__delay-1.8s');
             }
         }
         else {
             entry.target.classList.remove(
-                'animate__animated',
-                'animate__flipInX',
                 'animate__fadeIn',
-                'animate__fadeInDownBig',
-                'animate__bounceInDown'
+                'animate__bounceInDown',
             );
         }
     })
@@ -39,13 +22,13 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.7
 })
 const elements = document.querySelectorAll(
-    '#about-me-para,#technologies-list, #right-section, #contact-form, #contact-links-section, #contact-para'
+    '#about-me-para, #right-section, #services-lists'
 );
 elements.forEach(elements => observer.observe(elements));
 
 var typo = new Typed('.auto-type', {
 
-    strings: ['Frontend Developer', 'Backend-Developer', 'Full-stack Developer'],
+    strings: ['Frontend Developer', 'Backend Developer', 'Subject Matter Expert'],
     typeSpeed: 140,
     backSpeed: 140,
     loop: true,

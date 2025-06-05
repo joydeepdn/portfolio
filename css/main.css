@@ -135,7 +135,7 @@ html {
 
     .about-container {
         padding: 100px 50px 0 50px;
-        margin: 0 145px 0 145px;
+        margin: 0 145px;
     }
 
     .about-me {
@@ -147,7 +147,8 @@ html {
         font-family: "Roboto";
         color: #4d72be;
         font-size: 50px;
-        text-align: left;
+        text-align: center;
+        font-weight: 400;
     }
 
     .about-me p {
@@ -160,6 +161,7 @@ html {
     .technologies h3 {
         margin: 0 0 50px 0;
         font-size: 30px;
+        font-weight: 400;
         font-family: "Roboto";
         color: #4d72be;
         text-align: center;
@@ -214,6 +216,7 @@ html {
         font-size: 37px;
         margin: 0 0 50px 0;
         color: #3D5B98;
+        font-weight: 400;
 
     }
     .services-container ul{
@@ -270,6 +273,7 @@ html {
         margin: 0 0 50px 0;
         font-family: "Roboto";
         color: #3D5B98;
+        font-weight: 400;
     }
     .projects-section ul{
         list-style-type: none;
@@ -346,6 +350,7 @@ html {
         font-family: "Roboto";
         color: #4d72be;
         margin: 0 0 50px 0;
+        font-weight: 400;
     }
     .contact-section input {
         width: 100%;

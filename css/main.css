@@ -88,7 +88,7 @@ html {
     .container .hero-section {
         display: flex;
         align-items: center;
-        margin: 0 145px 0 145px;
+        margin: 0 10%;
         width: 100%;
     }
 
@@ -167,7 +167,7 @@ html {
         text-align: center;
     }
     .technologies {
-        padding: 50px 8%;
+        padding: 5% 8%;
     }
 
     .technologies .technologies-list {

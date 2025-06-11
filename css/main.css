@@ -135,11 +135,11 @@ html {
 
     .about-container {
         padding: 100px 50px 0 50px;
-        margin: 0 145px;
+        margin: 0 10%;
     }
 
     .about-me {
-        padding: 0 50px 0 50px;
+        padding: 0 8% 0 8%;
     }
 
     .about-me h2 {
@@ -167,7 +167,7 @@ html {
         text-align: center;
     }
     .technologies {
-        padding: 50px 50px 100px 50px;
+        padding: 50px 8%;
     }
 
     .technologies .technologies-list {
@@ -188,7 +188,7 @@ html {
         font-family: "Open Sans";
         font-size: 13px;
         border-radius: 5px;
-        width: 170px;
+        width: 150px;
         height: 80px;
         transition: 0.2s;
         margin: 8px;
@@ -207,7 +207,7 @@ html {
         background-color: #F7F7F7;
     }
     .services-container{
-        margin: 0 145px 0 145px;
+        margin: 0 10%;
         padding: 70px 50px 100px 50px;
     }
     .services-container h3{
@@ -264,7 +264,7 @@ html {
         background-color: #FFFFFF;
     }
     .projects-section{
-        margin: 0 145px 0 145px;
+        margin: 0 10%;
         padding: 50px 50px 100px 50px;
     }
     .projects-section h3{
@@ -339,7 +339,7 @@ html {
         align-items: flex-start;
         justify-content: space-evenly;
         flex-direction: row;
-        margin: 0 145px 0 145px;
+        margin: 0 10%;
     }
     .contact-section{
         max-width: 600px;

@@ -139,7 +139,7 @@ html {
     }
 
     .about-me {
-        padding: 0 8% 0 8%;
+        padding: 0 100px;
     }
 
     .about-me h2 {
@@ -167,7 +167,7 @@ html {
         text-align: center;
     }
     .technologies {
-        padding: 5% 8%;
+        padding: 100px;
     }
 
     .technologies .technologies-list {

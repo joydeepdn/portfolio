@@ -74,7 +74,10 @@
 
       .right-section p {
           text-align: left;
-          font-size: 37px;
+          font-size: 30px;
+      }
+      .right-section p span{
+        font-size: 30px;
       }
       .Connect {
           flex-direction: column;
@@ -82,7 +85,7 @@
       }
 
       .Connect button {
-          width: 130px;
+          width: 120px;
       }
       .about-container {
           padding: 17px;
@@ -209,6 +212,9 @@
           flex-direction: column;
           margin: 0;
           gap: 0;
+      }
+      .contact-form {
+        height: 100px;
       }
 
       .contact-header {

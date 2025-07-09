@@ -43,7 +43,7 @@
     color: #ECF0F1;
 }
 .dark-mode .about-section{
-    background-color: #1f2c39;
+    background-color: #1B2733;
 }
 .dark-mode .about-me p{
     color: #D4D8D8;
@@ -53,7 +53,7 @@
     color: #ECF0F1;
 }
 .dark-mode .services{
-    background-color: #1B2733;
+    background-color: #1f2c39;
 }
 .dark-mode .services-container h3{
     color: #4d85be;
@@ -63,11 +63,13 @@
     color: #ECF0F1;
     border: none;
 }
+.dark-mode .services li:hover{
+}
 .dark-mode .services li p{
     color: #ECF0F1;
 }
 .dark-mode .projects{
-    background-color: #1f2c39;
+    background-color: #1B2733;
 }
 .dark-mode .projects-section h3{
     color: #D4D8D8;
@@ -80,7 +82,7 @@
     color: #D4D8D8;
 }
 .dark-mode .contact{
-    background-color: #1B2733;
+    background-color: #1f2c39;
 }
 .dark-mode .contact-section input{
     color: #D4D8D8;

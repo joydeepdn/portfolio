@@ -205,10 +205,9 @@
           margin: 0;
           gap: 0;
       }
-      .contact-form {
-        height: 100px;
+      .contact-section input{
+        height: 40px;
       }
-
       .contact-header {
           font-size: 30px;
           margin: 0 0 40px 0;

@@ -189,10 +189,11 @@ html {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         padding: 10px;
         font-family: "Open Sans";
         font-size: 12px;
-        border-radius: 5px;
+        border-radius: 10px;
         width: 120px;
         height: 60px;
         transition: 0.2s;

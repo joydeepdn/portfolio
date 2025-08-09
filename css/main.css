@@ -294,6 +294,7 @@ html {
         text-align: center;
         font-size: 13px;
         transition: 0.2s;
+        border-radius: 5px;
     }
     .projects-section li .showcase{
         display: flex;
@@ -324,7 +325,7 @@ html {
     .projects-section li img{
         width: 100%;
         height: 200px;
-        object-fit: cover;
+        object-fit: contain;
         margin: 0 0 10px 0;
     }
     .projects-section span{

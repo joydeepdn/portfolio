@@ -286,6 +286,7 @@ html {
         flex-wrap: wrap;
     }
     .projects-section li{
+        background-color: #F7F7F7;
         width: 400px;
         height: auto;
         margin: 10px;
@@ -295,12 +296,12 @@ html {
         font-size: 13px;
         transition: 0.2s;
         border-radius: 5px;
+        padding: 20px;
     }
     .projects-section li .showcase{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
     }
     .projects-section li a{
         font-size: 10px;

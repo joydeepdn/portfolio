@@ -8,12 +8,9 @@
         margin: 0;
     }
     .about-me{
-        padding: 0 20px 0 20px;
+        padding: 30px;
         margin: 0; 
     }   
-    .about-me p{
-        font-size: 12px;
-    }
     .technologies h3{
         margin: 0 0 20px 0;
         font-size: 30px;
@@ -35,11 +32,8 @@
         flex-wrap: wrap;
     }
     .services-container li{
-        width: 250px;
-        height: auto;
         margin: 10px;
         padding: 20px;
-        font-size: 10px;
         text-align: center;
     }
     .services-container li img{

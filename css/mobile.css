@@ -93,7 +93,7 @@
           margin: 0;
       }
       .about-me {
-          padding: 0;
+          padding: 20px;
           margin: 0;
       }
       .about-me h2 {
@@ -189,13 +189,13 @@
           width: auto;
           height: auto;
           font-size: 12px;
+          padding: 10px;
+          margin: 0;
       }
       .projects-section li .showcase{
         padding: 10px;
       }
-      .projects-section li span{
-        margin: 0 10px 0 10px;
-      }
+
       .contact {
           padding: 20px 17px 17px 17px;
       }

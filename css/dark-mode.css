@@ -45,41 +45,38 @@
 .dark-mode .about-section{
     background-color: #1B2733;
 }
+.dark-mode .about-me{
+    background-color: #1f2c39;
+}
 .dark-mode .about-me p{
-    color: #D4D8D8;
+    color: #ffffff;
 }
 .dark-mode .technologies-list li{
-    background-color: #415161;
-    color: #ECF0F1;
+    background-color: #2C3E50;
+    color: #ffffff;
 }
 .dark-mode .services{
     background-color: #1f2c39;
 }
-.dark-mode .services-container h3{
-    color: #4d85be;
-}
 .dark-mode .services li{
     background-color: #2C3E50;
-    color: #ECF0F1;
-    border: none;
+    color: #D4D8D8;
 }
-.dark-mode .services li:hover{
-}
-.dark-mode .services li p{
-    color: #ECF0F1;
+.dark-mode .services p{
+    color: #00a0c7;
 }
 .dark-mode .projects{
     background-color: #1B2733;
 }
-.dark-mode .projects-section h3{
-    color: #D4D8D8;
-}
 .dark-mode .projects-section span{
-    color: #ECF0F1;
+    color: #00a0c7;
 }
 .dark-mode .projects-section li{
     background-color: #2C3E50;
     color: #D4D8D8;
+}
+.dark-mode .projects-section a{
+    background-color: #00a0c7;
 }
 .dark-mode .contact{
     background-color: #1f2c39;

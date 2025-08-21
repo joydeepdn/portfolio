@@ -113,7 +113,6 @@
 
       .technologies h3 {
           font-size: 20px;
-          margin: 20px 0 20px 0;
           text-align: center;
       }
       .technologies .technologies-list li {
@@ -151,8 +150,6 @@
           margin: 10px 0 10px 0;
       }     
       .services li img {
-          width: 100px;
-          height: 100px;
           margin: 0 0 10px 0;
 
       }
@@ -189,13 +186,9 @@
           width: auto;
           height: auto;
           font-size: 12px;
-          padding: 10px;
+          padding: 20px;
           margin: 0;
       }
-      .projects-section li .showcase{
-        padding: 10px;
-      }
-
       .contact {
           padding: 20px 17px 17px 17px;
       }

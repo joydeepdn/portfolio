@@ -7,7 +7,9 @@
 
 html {
     scroll-behavior: smooth;
-
+}
+body{
+    font-family: 'Work Sans'
 }
     .mynav {
         display: flex;
@@ -43,7 +45,6 @@ html {
     }
     .logo h2 {
         color: #3D5B98;
-        font-family: 'Open Sans';
         font-size: 17px;
     }
 
@@ -60,7 +61,6 @@ html {
         color: #3D5B98;
         font-size: 17px;
         text-decoration: none;
-        font-family: 'Open Sans';
         padding: 8px;
         font-weight: 500;
     }
@@ -98,7 +98,6 @@ html {
     .right-section p {
         text-align: start;
         font-size: 60px;
-        font-family:'Roboto';
         color: #070d09;
     }
     .right-section span {
@@ -112,7 +111,6 @@ html {
         margin: 40px 0 0;
     }
     .Connect button {
-        font-family: 'Roboto';
         padding: 10px;
         width: 200px;
         height: 60px;
@@ -121,8 +119,7 @@ html {
         transition: 0.3s;
         border: none;
         background-color: #4d72be;
-        color: #FFFFFF;
-        /* border-radius: 10rem; */
+        color: #FFFFFF
     }
 
     .Connect button:hover {
@@ -143,11 +140,11 @@ html {
         max-width: 600px;
         background-color: #F7F7F7;
         padding: 30px;
+        border-radius: 5px;
     }
 
     .about-me h2 {
         margin: 0 0 25px 0;
-        font-family: "Roboto";
         color: #008b7d;
         font-size: 40px;
         text-align: center;
@@ -155,16 +152,13 @@ html {
 
     .about-me p {
         text-align: justify;
-        font-family: "Open Sans";
         color: #070d09;
         line-height: 1.5;
-        font-size: 15px;
     }
 
     .technologies h3 {
         margin: 0 0 25px 0;
         font-size: 25px;
-        font-family: "Roboto";
         color: #3D5B98;
         text-align: center;
     }
@@ -177,7 +171,7 @@ html {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
         gap: 0 15px;
     }
 
@@ -188,12 +182,9 @@ html {
         align-items: center;
         justify-content: center;
         padding: 10px;
-        font-family: "Open Sans";
-        font-size: 12px;
-        width: 120px;
-        height: 60px;
         transition: 0.2s;
         margin: 8px;
+        border-radius: 5px;
     }
 
     .technologies-list li:hover {
@@ -213,7 +204,6 @@ html {
         padding: 70px 0 100px 0;
     }
     .services-container h3{
-        font-family: 'Roboto';
         font-size: 35px;
         margin: 0 0 50px 0;
         color: #008b7d;
@@ -227,11 +217,11 @@ html {
         flex-wrap: nowrap;
     }
     .services p{
-        font-family: 'Roboto';
         margin: 0 0 20px 0;
         text-align: center;
         color: #3D5B98;
         font-size: 20px;
+        font-weight: 500;
     }
     .services li{
         width: 320px;
@@ -240,22 +230,22 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: 'Open Sans';
         margin: 10px;
-        padding: 30px;
+        padding: 20px;
         text-align: center;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         background-color: #FFFFFF;
         transition: 0.2s;
-        font-size: 14px;
+        border-radius: 5px;
+        line-height: 1.4;
 
     }
     .services li:hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     .services li img{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         margin: 0 0 20px 0;
     }
     .projects-section{
@@ -266,7 +256,6 @@ html {
         text-align: center;
         font-size: 40px;
         margin: 0 0 50px 0;
-        font-family: "Roboto";
         color:#008b7d;
     }
     .projects-section ul{
@@ -282,11 +271,13 @@ html {
         width: 400px;
         height: auto;
         margin: 10px;
-        font-family: "Open Sans";
         text-align: center;
-        font-size: 14px;
         transition: 0.2s;
-        padding: 30px;
+        padding: 25px;
+        border-radius: 5px;
+    }
+    .projects-section li p{
+        line-height: 1.4;
     }
     .projects-section li .showcase{
         display: flex;
@@ -321,6 +312,7 @@ html {
     .projects-section span{
         font-size: 20px;
         color: #3D5B98;
+        font-weight: 500;
     }
     .contact {
         padding: 50px 0 100px 0;
@@ -341,7 +333,6 @@ html {
     .contact-header {
         text-align: center;
         font-size: 40px;
-        font-family: "Roboto";
         color: #4d72be;
         margin: 0 0 50px 0;
     }
@@ -390,7 +381,6 @@ html {
         border-radius: 5px;
         max-width: 500px;
     }
-
     .contact-links-section .contact-links {
         list-style-type: none;
         display: flex;
@@ -418,12 +408,7 @@ html {
         background-color: #070d09;
     }
     .contact-links-section p {
-        font-family: "Open Sans";
         line-height: 1.6;
-        font-size: 15px;
-    }
-    .social {
-        display: none;
     }
     .footer-class {
         background-color: #FFFFFF;
@@ -433,7 +418,6 @@ html {
         padding: 10px;
         color: #070d09;
         justify-content: center;
-        font-family: "Open Sans";
         font-size: 16px;
     }
     .footer-class img {

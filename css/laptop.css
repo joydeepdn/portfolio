@@ -18,9 +18,6 @@
     .technologies{
         padding: 0 20px 0 20px;
     }
-    .technologies-list li{
-        font-size: 12px;
-    }
     .services{
         padding: 40px;
     }
@@ -40,9 +37,6 @@
         width: 60px;
         height: 60px;
     }
-    .services-container li p{
-        font-size: 15px;
-     }
     .projects-section{
         margin: 0;
         padding: 50px 40px;

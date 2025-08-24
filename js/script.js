@@ -11,7 +11,6 @@ const myNav = document.getElementById('mynav');
 const theme = localStorage.getItem('theme')
 
 
-
 function openNav() {
   if (window.innerWidth <= 600) {
     links.classList.add('open')

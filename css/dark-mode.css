@@ -59,7 +59,7 @@
     background-color: #1f2c39;
 }
 .dark-mode .services li{
-    background-color: #2C3E50;
+    background-color: #1B2733;
     color: #D4D8D8;
 }
 .dark-mode .services p{
@@ -74,6 +74,9 @@
 .dark-mode .projects-section li{
     background-color: #2C3E50;
     color: #D4D8D8;
+}
+.dark-mode .projects-section .showcase{
+    background-color: #1f2c39;
 }
 .dark-mode .projects-section a{
     background-color: #00a0c7;

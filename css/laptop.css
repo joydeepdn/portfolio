@@ -41,8 +41,11 @@
         margin: 0;
         padding: 50px 40px;
     }
-    .projects-section li{
-        height: auto;
+    .projects-section ul{
+        flex-wrap: wrap;
+    }
+    .projects-section .showcase{
+        padding: 15px;
     }
     .contact{
         padding:  50px 40px 50px 40px;

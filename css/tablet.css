@@ -69,11 +69,11 @@
         margin: 0;
         padding: 40px 20px 40px 20px;
     }
-    .projects-section li{
-        padding: 20px;
+    .projects-section ul{
+        flex-wrap: wrap;
     }
-    .projects-section li span{
-        margin: 0 10px 0 10px;
+    .projects-section .showcase{
+        padding: 20px;
     }
     .contact{
         padding: 40px 20px 0 20px;

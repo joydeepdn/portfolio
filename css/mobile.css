@@ -185,7 +185,7 @@
 
       .projects-section li {
         width: 326px;
-        height: 275px;
+        height: auto;
         margin: 0;
       }
       .projects-section li img{

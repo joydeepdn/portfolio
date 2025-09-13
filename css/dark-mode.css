@@ -84,9 +84,13 @@
 .dark-mode .contact{
     background-color: #1f2c39;
 }
+.dark-mode form{
+    background-color: #1f2c39;
+    border: 1px solid #AEB8C4;
+}
 .dark-mode .contact-section input{
     color: #D4D8D8;
-    border: none;
+    border: 1px solid #AEB8C4;
 }
 .dark-mode .contact-section input[type=text]{
     background-color: #2C3E50;
@@ -94,10 +98,13 @@
 .dark-mode .contact-section input[type=email]{
     background-color: #2C3E50;
 }
+.dark-mode .contact-section input[type=submit]{
+    border: none;
+}
 .dark-mode .contact-section textarea{
     background-color: #2C3E50;
     color: #D4D8D8;
-    border: none;
+    border: 1px solid #AEB8C4;
 }
 .dark-mode .contact-section input::placeholder{
     color: #D4D8D8;
@@ -108,11 +115,8 @@
 .dark-mode .contact-links-section p{
     color: #D4D8D8;
 }
-.dark-mode .contact-links li{
-    color: #ffffff;
-}
-.dark-mode .contact-links li:hover{
-    color: #D4D8D8;
+.dark-mode .contact-links a:hover{
+    border: none;
 }
 .dark-mode .footer-class{
     background-color: #1B2733;

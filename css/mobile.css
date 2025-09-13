@@ -208,6 +208,9 @@
           margin: 0;
           gap: 0;
       }
+      form{
+        padding: 10px;
+      }
       .contact-section input{
         height: 40px;
       }

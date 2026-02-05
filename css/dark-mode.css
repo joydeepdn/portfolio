@@ -9,10 +9,10 @@
     color: #ECF0F1;
 }
 .dark-mode #toggle-button{
-    color:#ECF0F1;
+    color: #ECF0F1;
 }
 .dark-mode #toggle-button:hover{
-    color: #1f2c39;
+    border: 1px solid #ECF0F1;
 }
 .dark-mode #links{
     background-color: #1f2c39;
@@ -21,8 +21,7 @@
     color : #ECF0F1;
 }
 .dark-mode .links a:hover{
-    color: #2C3E50;
-    background-color: #D4D8D8;
+    border: 1px solid #ECF0F1;
 }
 .dark-mode .logo h2{
     color: #ECF0F1;
@@ -78,9 +77,6 @@
 .dark-mode .projects-section .showcase{
     background-color: #1f2c39;
 }
-.dark-mode .projects-section a{
-    background-color: #00a0c7;
-}
 .dark-mode .contact{
     background-color: #1f2c39;
 }
@@ -121,4 +117,7 @@
 .dark-mode .footer-class{
     background-color: #1B2733;
     color: #ECF0F1;
+}
+.dark-mode .projects-section span.more{
+    color:inherit
 }

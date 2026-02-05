@@ -1,3 +1,4 @@
+
 const links = document.getElementById('links');
 const navLinks = document.getElementById('nav-links')
 const openBtn = document.getElementById('hamburger');
@@ -59,3 +60,21 @@ window.addEventListener('DOMContentLoaded', () => {
     moon.style.display = 'none'
   }
 })
+
+ function readMe(button) {
+    const item = button.closest('.showcase');
+    const more = item.querySelector('.more');
+    const dots = item.querySelector('.dots');
+
+    more.classList.toggle('show')
+
+    if(more.classList.contains('show')) {
+        dots.style.display = 'none';
+        button.textContent = 'Read Less';
+    }
+    else {
+        more.classList.remove('show')
+        dots.style.display = 'inline';
+        button.textContent = 'Read More';
+    }
+}

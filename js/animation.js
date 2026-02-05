@@ -29,8 +29,8 @@ elements.forEach(elements => observer.observe(elements));
 var typo = new Typed('.auto-type', {
 
     strings: ['Frontend Developer', 'Backend Developer', 'Subject Matter Expert'],
-    typeSpeed: 140,
-    backSpeed: 140,
+    typeSpeed: 100,
+    backSpeed: 100,
     loop: true,
 });
 
